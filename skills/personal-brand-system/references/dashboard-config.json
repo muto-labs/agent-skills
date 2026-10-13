@@ -1,0 +1,260 @@
+{
+  "components": [
+    {
+      "id": "skill",
+      "title": "Skill entrypoint",
+      "description": "The AI's role, personality and operating rules. Your package's front door.",
+      "status": "built",
+      "statusLabel": "Built",
+      "metric": "built",
+      "foundation": false,
+      "improve": "The entrypoint is built. Tool/platform loading still needs validation in each environment.",
+      "docs": [
+        "SKILL.md"
+      ],
+      "number": 1
+    },
+    {
+      "id": "spec",
+      "title": "Personal Brand Tech Spec",
+      "description": "Objectives, responsibilities, inputs, instructions, outputs and validation.",
+      "status": "built",
+      "statusLabel": "Built",
+      "metric": "built",
+      "foundation": false,
+      "improve": "Living objectives and method; improve through observed use.",
+      "docs": [
+        "references/personal-brand-tech-spec.md"
+      ],
+      "number": 2
+    },
+    {
+      "id": "interview",
+      "title": "Interviewing guide",
+      "description": "A curious, progressive conversation about the whole person and their ambitions.",
+      "status": "built",
+      "statusLabel": "Built",
+      "metric": "built",
+      "foundation": false,
+      "improve": "Create useful work early and deepen progressively.",
+      "docs": [
+        "references/interviewing-guide.md"
+      ],
+      "number": 3
+    },
+    {
+      "id": "kb",
+      "title": "Personal Brand KB",
+      "description": "Your identity, positioning, history, interests, beliefs and growing body of knowledge.",
+      "status": "accepted",
+      "statusLabel": "Core established",
+      "metric": "reviewed",
+      "metricLabel": "Identity + positioning reviewed",
+      "milestones": [
+        "M2",
+        "M3"
+      ],
+      "foundation": true,
+      "improve": "Identity and positioning progress is shown here; full KB review is a separate milestone.",
+      "docs": [
+        "references/personal-brand-kb.md"
+      ],
+      "number": 4
+    },
+    {
+      "id": "voice",
+      "title": "Voice & style",
+      "description": "Voice, tone and style that make the words recognizably yours.",
+      "status": "review",
+      "statusLabel": "Needs review",
+      "metric": "reviewed",
+      "metricLabel": "Expression checklist reviewed",
+      "milestones": [
+        "M5"
+      ],
+      "foundation": true,
+      "improve": "Review your voice guide and examples. Deferred visuals remain visible.",
+      "docs": [
+        "references/voice-style-guide.md",
+        "assets/templates/voice-guide.md"
+      ],
+      "number": 5
+    },
+    {
+      "id": "progress",
+      "title": "Onboarding & progress",
+      "description": "Completion, readiness and active time, with open and deferred work kept visible.",
+      "status": "built",
+      "statusLabel": "Built",
+      "metric": "built",
+      "foundation": false,
+      "improve": "Built tracker; readiness and completed-and-reviewed coverage are different.",
+      "docs": [
+        "references/progress.md",
+        "references/onboarding-scoring.md"
+      ],
+      "number": 6
+    },
+    {
+      "id": "templates",
+      "title": "Asset template catalog",
+      "description": "Reusable structures for bios, stories, profiles, communications and practical plans.",
+      "status": "built",
+      "statusLabel": "22 recipes built",
+      "metric": "built",
+      "foundation": false,
+      "improve": "Initial recipes built; quality improves through real outputs.",
+      "docs": [
+        "references/asset-catalog.md"
+      ],
+      "number": 7
+    },
+    {
+      "id": "assets",
+      "title": "Inputs & brand assets",
+      "description": "Original material, accepted profile and bios, plus versioned ideas and working drafts.",
+      "status": "review",
+      "statusLabel": "In use",
+      "metric": "reviewed",
+      "metricLabel": "Starter-asset milestone reviewed",
+      "milestones": [
+        "M9"
+      ],
+      "foundation": true,
+      "improve": "Build, review and apply starter assets. Keep source materials and earlier versions.",
+      "docs": [
+        "references/asset-index.md"
+      ],
+      "number": 8
+    },
+    {
+      "id": "presence",
+      "title": "Presence & relationships",
+      "description": "Where people find you, how you connect, and the actions that bring your brand to life.",
+      "status": "review",
+      "statusLabel": "Drafts captured",
+      "metric": "reviewed",
+      "metricLabel": "Presence / relationships / roadmap",
+      "milestones": [
+        "M6",
+        "M7",
+        "M8"
+      ],
+      "foundation": true,
+      "improve": "Review channels, relationship practices and next actions at a feasible pace.",
+      "docs": [
+        "references/presence-roadmap.md"
+      ],
+      "number": 9
+    },
+    {
+      "id": "maintenance",
+      "title": "Maintenance & validation",
+      "description": "Keep the knowledge, assets and next steps accurate as you and your work evolve.",
+      "status": "review",
+      "statusLabel": "Review open",
+      "metric": "reviewed",
+      "metricLabel": "Final review milestone",
+      "milestones": [
+        "M10"
+      ],
+      "foundation": true,
+      "improve": "Tools built; final KB/readiness/maintenance review remains a separate checklist.",
+      "docs": [
+        "references/maintenance.md",
+        "references/progress.md"
+      ],
+      "number": 10
+    }
+  ],
+  "fuel": [
+    {
+      "id": "origin",
+      "title": "Origin & history studio",
+      "description": "Turn pivotal experiences into stories that explain who you are.",
+      "effort": "45\u201390 min",
+      "when": "You want a richer origin story or material for talks.",
+      "doc": "references/fuel/origin.md"
+    },
+    {
+      "id": "reputation",
+      "title": "Reputation mirror",
+      "description": "Compare the impression you intend with the signals people see.",
+      "effort": "20\u201340 min",
+      "when": "Your public presence may not reflect your current direction.",
+      "doc": "references/fuel/reputation.md"
+    },
+    {
+      "id": "voice",
+      "title": "Voice lab",
+      "description": "Experiment with language until the words feel unmistakably yours.",
+      "effort": "20\u201330 min",
+      "when": "Your drafts feel generic or your voice is evolving.",
+      "doc": "references/fuel/voice.md"
+    },
+    {
+      "id": "trust",
+      "title": "Trust lab",
+      "description": "Make credibility, reliability, connection and care visible in your actions.",
+      "effort": "20\u201340 min",
+      "when": "You want to strengthen the experience of working with you.",
+      "doc": "references/fuel/trust.md"
+    },
+    {
+      "id": "opportunity",
+      "title": "Opportunity compass",
+      "description": "Choose opportunities that fit your goals, values and capacity.",
+      "effort": "15\u201325 min",
+      "when": "You are weighing a role, partnership, invitation or commitment.",
+      "doc": "references/fuel/opportunity.md"
+    },
+    {
+      "id": "contribution",
+      "title": "Contribution portfolio",
+      "description": "Build a credible collection of the impact you have helped create.",
+      "effort": "30\u201345 min",
+      "when": "You need stronger proof for a profile, talk or opportunity.",
+      "doc": "references/fuel/contribution.md"
+    },
+    {
+      "id": "purpose",
+      "title": "Purpose exploration",
+      "description": "Explore where your interests, strengths and contribution meet.",
+      "effort": "30\u201345 min",
+      "when": "You are reconsidering your direction or what matters next.",
+      "doc": "references/fuel/purpose.md"
+    },
+    {
+      "id": "journey",
+      "title": "Audience journey",
+      "description": "Make it easier for people to understand how you can help.",
+      "effort": "30\u201345 min",
+      "when": "People struggle to see where to start or what comes next.",
+      "doc": "references/fuel/journey.md"
+    },
+    {
+      "id": "future",
+      "title": "Future lab",
+      "description": "Explore a possible future and turn it into a practical experiment.",
+      "effort": "20\u201340 min",
+      "when": "You want to connect a longer-term ambition to action today.",
+      "doc": "references/fuel/future.md"
+    },
+    {
+      "id": "relationships",
+      "title": "Relationship experience design",
+      "description": "Design thoughtful interactions that help people feel understood.",
+      "effort": "20\u201340 min",
+      "when": "You want meetings, follow-ups or gatherings to offer more value.",
+      "doc": "references/fuel/relationships.md"
+    },
+    {
+      "id": "field-test",
+      "title": "Audience field test",
+      "description": "Test a message or asset with people you want to serve.",
+      "effort": "20\u201330 min plus feedback",
+      "when": "You want evidence that your positioning or content actually connects.",
+      "doc": "references/fuel/field-test.md"
+    }
+  ]
+}

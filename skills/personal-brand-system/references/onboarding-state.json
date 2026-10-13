@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "standard_version": "0.5.0",
+  "leader": "not initialized",
+  "output_prefix": "",
+  "updated": "2026-10-11",
+  "items": [
+    {
+      "id": "M1.1",
+      "milestone": "Objectives",
+      "label": "Outcomes selected",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M1.2",
+      "milestone": "Objectives",
+      "label": "Baselines/targets/timeframes",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M1.3",
+      "milestone": "Objectives",
+      "label": "Capacity/privacy boundaries",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M2.1",
+      "milestone": "Identity",
+      "label": "Purpose/vision",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M2.2",
+      "milestone": "Identity",
+      "label": "Values with behavior",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M2.3",
+      "milestone": "Identity",
+      "label": "Strengths and selected history",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M3.1",
+      "milestone": "Positioning",
+      "label": "Audience priorities",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M3.2",
+      "milestone": "Positioning",
+      "label": "Needs/contribution/difference",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M3.3",
+      "milestone": "Positioning",
+      "label": "Positioning reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M4.1",
+      "milestone": "Proof",
+      "label": "Claims inventoried",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M4.2",
+      "milestone": "Proof",
+      "label": "Sources and contribution mapped",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M4.3",
+      "milestone": "Proof",
+      "label": "Public claims supported",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M5.1",
+      "milestone": "Expression",
+      "label": "Voice examples reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M5.2",
+      "milestone": "Expression",
+      "label": "Style/tone/vibe guide",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M5.3",
+      "milestone": "Expression",
+      "label": "Visual direction reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M6.1",
+      "milestone": "Presence",
+      "label": "Existing channels inventoried",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M6.2",
+      "milestone": "Presence",
+      "label": "Names/domains/handles assessed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M6.3",
+      "milestone": "Presence",
+      "label": "Channel roles and next steps",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M7.1",
+      "milestone": "Relationships",
+      "label": "Four trust dimensions explored",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M7.2",
+      "milestone": "Relationships",
+      "label": "Experience promise",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M7.3",
+      "milestone": "Relationships",
+      "label": "Contribution practices",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M8.1",
+      "milestone": "Roadmap",
+      "label": "Priorities/dependencies",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M8.2",
+      "milestone": "Roadmap",
+      "label": "Owners/effort/timing",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M8.3",
+      "milestone": "Roadmap",
+      "label": "Next action feasible",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M9.1",
+      "milestone": "Assets",
+      "label": "One-page profile reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M9.2",
+      "milestone": "Assets",
+      "label": "Bio and spoken pitch reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M9.3",
+      "milestone": "Assets",
+      "label": "Real communication reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M10.1",
+      "milestone": "Review",
+      "label": "KB reviewed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M10.2",
+      "milestone": "Review",
+      "label": "Readiness/gaps confirmed",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    },
+    {
+      "id": "M10.3",
+      "milestone": "Review",
+      "label": "Maintenance/resume plan",
+      "state": "not started",
+      "evidence": "",
+      "reason": ""
+    }
+  ],
+  "time_events": [],
+  "readiness": "Not initialized",
+  "quality": "Unassessed. Evaluate selected answers with evidence and scope.",
+  "next": "Initialize leader, select objectives and produce first useful draft.",
+  "deferred_work": []
+}

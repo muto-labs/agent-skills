@@ -1,0 +1,15 @@
+{
+  "statuses": {
+    "origin": "ready",
+    "reputation": "ready",
+    "voice": "ready",
+    "trust": "ready",
+    "opportunity": "ready",
+    "contribution": "ready",
+    "purpose": "ready",
+    "journey": "ready",
+    "future": "ready",
+    "relationships": "ready",
+    "field-test": "ready"
+  }
+}

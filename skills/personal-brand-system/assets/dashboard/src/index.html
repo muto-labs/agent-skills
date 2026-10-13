@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Personal Brand Workspace</title>
+<link rel="stylesheet" href="styles.css"><script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="sidebar">
+<a href="#overview" class="brand"><span class="brand-mark">p<span>b</span>.</span><span class="brand-caption">PERSONAL BRAND SYSTEM</span></a>
+<div class="workspace-label">YOUR WORKSPACE</div>
+<nav aria-label="Main navigation">
+<a href="#overview" class="nav-link active"><span>◈</span> Overview</a>
+<a href="#components" class="nav-link"><span>▦</span> Skill components <span class="nav-count">10</span></a>
+<a href="#fuel" class="nav-link"><span>✦</span> Fuel</a>
+<a href="#assets" class="nav-link"><span>▤</span> Asset library</a>
+<a href="#next" class="nav-link"><span>↗</span> Next steps</a>
+</nav>
+<div class="sidebar-bottom"><span class="local-dot"></span> Local & private<p>Your knowledge. Your voice.<br>Your next chapter.</p><div class="mini-palette" aria-label="Muto brand palette"><i></i><i></i><i></i><i></i><i></i><i></i></div><small id="sidebarVersion"></small></div>
+</aside>
+<main id="main">
+<header class="topbar"><div class="breadcrumbs">Personal Brand <span>/</span> <strong id="crumbName">Your name</strong></div><div class="top-meta"><span id="snapshotDate"></span><button class="text-button" data-doc="references/kickoff-guide.md">Start here</button><button class="text-button" id="refreshInfo">About this snapshot</button></div></header>
+<section id="overview" class="section overview">
+<div class="eyebrow"><span class="accent-line"></span> YOUR PERSONAL BRAND</div>
+<div class="hero-grid"><div>
+<h1>Your brand.<br><span>Built to grow.</span></h1>
+<p class="hero-copy">A living view of who you are, what you stand for, and the work that brings your brand to life.</p>
+<div class="person"><div class="avatar">PB</div><div><h2 id="leaderName">Your name</h2><p id="leaderRole">Your role and direction will take shape here.</p></div></div>
+<div class="hero-buttons"><button class="primary" id="profileButton" data-doc="references/personal-brand-kb.md">Start my profile <span>↗</span></button><a class="secondary" href="#next">See what's next <span>→</span></a></div>
+</div><div class="progress-panel"><div class="panel-top"><span>ONBOARDING COVERAGE</span><span class="badge review">In progress</span></div><div class="progress-line"><strong id="progressNumber">0<span>%</span></strong><span>completed<br>& reviewed</span></div><div class="progress-track"><div id="progressBar"></div></div><div class="counts"><div><b id="resolvedCount">0</b><span>Complete</span></div><div><b id="remainingCount">30</b><span>Open</span></div><div><b id="deferredCount">0</b><span>Deferred</span></div></div><div class="readiness"><span>✓</span><div><strong id="readinessTitle">Ready to begin</strong><p id="readinessDescription">Your knowledge and assets will grow as you work.</p></div></div><div class="time-row"><span>Active participation</span><strong id="activeTime">Not measured</strong></div><small>Reported time excludes breaks and waiting. Coverage is not a measure of effort or personal potential.</small></div></div>
+<div class="purpose-band"><span class="eyebrow">YOUR PURPOSE</span><p id="purposeText">Your purpose will take shape as we explore what matters to you.</p></div>
+<div class="foundation-strip"><div><span class="tiny-icon">◎</span><strong>Purpose & identity</strong><span id="identityBadge" class="badge review">To explore</span></div><div><span class="tiny-icon">◇</span><strong>Positioning</strong><span id="positioningBadge" class="badge review">To explore</span></div><div><span class="tiny-icon">▤</span><strong>Profile & bios</strong><span id="assetsBadge" class="badge review">Not yet</span></div></div>
+</section>
+<section id="components" class="section">
+<div class="section-heading"><div><div class="eyebrow">THE LIVING SYSTEM</div><h2>Everything that makes it yours.</h2><p>All 10 skill components. Open any component to explore the details.</p></div><button class="text-button" data-doc="references/personal-brand-kb.md">Explore the knowledge base ↗</button></div>
+<div class="controls"><div class="filter-group" id="componentFilters" aria-label="Filter components"><button class="filter active" data-filter="all" aria-pressed="true">All components</button><button class="filter" data-filter="foundation" aria-pressed="false">Foundation</button><button class="filter" data-filter="review" aria-pressed="false">Needs review</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="componentSearch" type="search" placeholder="Find a component…" aria-label="Search components"></label></div>
+<div class="component-grid" id="componentGrid"></div><p class="empty" id="componentEmpty" hidden>No components match. Try a different search or filter.</p>
+<p class="section-note">“Built” measures the initial tool or template. “Reviewed” measures your checklist. They are different kinds of progress.</p>
+</section>
+<section id="fuel" class="section">
+<div class="section-heading"><div><div class="eyebrow">ADVANCED AMPLIFIERS</div><h2>Fuel your next chapter.</h2><p>Choose what helps your current goal. Revisit as you grow—no completion target.</p></div></div>
+<div class="controls"><div class="filter-group" id="fuelFilters" aria-label="Filter Fuel"><button class="filter active" data-filter="all" aria-pressed="true">All Fuel</button><button class="filter" data-filter="focus" aria-pressed="false">Needs focus</button><button class="filter" data-filter="ready" aria-pressed="false">Ready to explore</button><button class="filter" data-filter="active" aria-pressed="false">In progress</button><button class="filter" data-filter="usable" aria-pressed="false">Ready to use</button><button class="filter" data-filter="revisit" aria-pressed="false">Revisit</button></div></div>
+<div class="component-grid" id="fuelGrid"></div><p class="empty" id="fuelEmpty" hidden>No Fuel experiences have this status yet. Choose All Fuel to explore.</p>
+</section>
+<section id="assets" class="section">
+<div class="section-heading"><div><div class="eyebrow">YOUR WORDS, PUT TO WORK</div><h2>A library that grows with you.</h2><p>Accepted assets, working drafts and ideas worth coming back to.</p></div><span class="counter" id="assetCount"></span></div>
+<div class="controls"><div class="filter-group" id="assetFilters" aria-label="Filter assets"><button class="filter active" data-filter="current" aria-pressed="true">Current assets</button><button class="filter" data-filter="accepted" aria-pressed="false">Accepted</button><button class="filter" data-filter="review" aria-pressed="false">Needs review</button><button class="filter" data-filter="deferred" aria-pressed="false">Deferred</button><button class="filter" data-filter="all" aria-pressed="false">All versions</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="assetSearch" type="search" placeholder="Find an asset…" aria-label="Search assets"></label></div>
+<div class="asset-list" id="assetList"></div><p class="empty" id="assetEmpty" hidden>No assets match this view.</p>
+</section>
+<section id="next" class="section">
+<div class="section-heading"><div><div class="eyebrow">MAKE THE NEXT STEP COUNT</div><h2>Progress, at your pace.</h2><p>Much of the remaining work is review and application. You don't need to start over.</p></div></div>
+<div class="next-layout"><div><div class="list-heading">OPEN CHECKLIST <span id="openCount"></span></div><div id="openItems"></div></div><aside class="later-panel"><div class="eyebrow">LATER, BY CHOICE</div><h3>Deferred ≠ forgotten.</h3><p>These stay visible without blocking useful work now.</p><ul id="deferredWork"></ul><button class="text-button" data-doc="references/progress.md">Open full dashboard ↗</button></aside></div>
+</section>
+<footer><span id="footerBrand">Your Personal Brand.</span><span>Local snapshot · No public publishing approval implied</span></footer>
+</main>
+<dialog id="detailDialog" aria-labelledby="detailTitle"><div class="dialog-top"><div><span class="eyebrow" id="detailType">DETAIL</span><h2 id="detailTitle"></h2></div><button class="close-button" id="closeDialog" aria-label="Close details">×</button></div><div class="detail-status" id="detailStatus"></div><div id="detailActions" class="detail-actions"></div><article class="document" id="documentBody"></article><div class="dialog-bottom"><button class="secondary" id="copyDocument">Copy text</button><a class="text-button" id="sourceLink" target="_blank" rel="noopener">Open source file ↗</a><span id="copyFeedback" role="status"></span></div></dialog>
+</body></html>
