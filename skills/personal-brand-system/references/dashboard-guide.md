@@ -20,3 +20,14 @@ The dashboard embeds private KB/source details. Keep local unless a separate pub
 
 ## First welcome and visual tour
 Offer the dashboard early. Follow [opening and usage instructions](kickoff-guide.md#open-and-explore-your-dashboard), supply the actual file, explain the initial empty state and keep the visual tour optional. Distinguish exploring saved details from editing through the AI conversation.
+
+## Open, update and refresh — user handoff
+On first creation, provide the actual clickable HTML file or downloadable package, its saved location and instructions to reopen it. Extract a ZIP before opening assets/dashboard/<initials>-personal-brand-dashboard.html in a browser. Keep the source package too, so future updates and exports are possible. Do not substitute a temporary preview for a delivered file. If a hosted preview is used, explain whether it expires and provide a supported download/export route.
+
+Explain the three separate actions: the AI saves knowledge/assets; the AI rebuilds the workspace; the user reloads the open browser page. Reloading alone does not rebuild anything. The page is a static saved snapshot, not an auto-syncing app or an editor. Buttons open saved details; edits happen through the AI conversation or source files.
+
+After successful save, rebuild and validation, say: “Your files and workspace are updated. Reload your open page to see the changes.” Supply the same stable file link. If only knowledge was saved, explicitly say the workspace is not yet rebuilt. Never claim an unsupported operation succeeded.
+
+Check platform capability early. If file writing or execution is unavailable, explain the limit and return proposed updates plus concrete manual save/build instructions. If the platform uses a Playground, artifact or preview, verify its supported export/open route rather than assuming its code appears in file listings. A missing delivery route remains an open item, not a completed handoff. Ask the leader to confirm they can reopen the file when that cannot be tested directly.
+
+Keep local/private, temporary preview and public website states distinct. The workspace embeds personal knowledge. Public publishing requires a separately reviewed public-safe version and explicit authorization. Do not call the workspace the source of truth: it renders the authoritative KB, state and asset files.

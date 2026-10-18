@@ -50,3 +50,6 @@ A first useful profile is a target of about 30–45 active minutes when inputs p
 - Offer the visual dashboard during the welcome without making it a gate to the interview. When sharing, provide a clickable actual file path or downloadable file, followed by the opening instructions above and a brief tour. Never give a placeholder link or claim a dashboard exists without checking. The leader can choose the visual tour or proceed directly.
 
 Approved kickoff wording: 2026-10-13. Use at first onboarding only; leaders already past kickoff continue from their current work. Adapt the dashboard link to the actual available file rather than copying a development-machine path.
+
+## Before leaving the first session
+Deliver the actual workspace file/link and saved location. Explain: AI saves files → AI rebuilds workspace → you reload the browser. Refresh alone does not rebuild the page. Confirm a usable reopen/export route or clearly state what remains unavailable. Follow [delivery instructions](dashboard-guide.md#open-update-and-refresh--user-handoff).

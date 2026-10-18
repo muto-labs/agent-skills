@@ -6,10 +6,10 @@ Build a living collection of your stories, goals, experience and preferences, th
 
 The Personal Brand skill includes a living knowledge-base template, interviewing guide, source-based voice guidance, 22 asset template recipes, a presence roadmap, progress tracking, Fuel experiences and a local visual workspace.
 
-**Current version: 0.5.0 · Early pilot release**
+**Current version: 0.5.1 · Early pilot release**
 
 ## Download and start
-1. [Download the Personal Brand skill ZIP](downloads/personal-brand-system-v0.5.0.zip?raw=true). Extract it on your computer.
+1. [Download the Personal Brand skill ZIP](downloads/personal-brand-system-v0.5.1.zip?raw=true). Extract it on your computer.
 2. Open `personal-brand-system/README.md` for getting-started instructions.
 3. Open `personal-brand-system/assets/dashboard/PB-personal-brand-dashboard.html` in your browser to explore a clean example. No server is needed for viewing.
 4. Give your AI the skill folder if it supports skills, or share `SKILL.md` and `references/kickoff-guide.md` in the conversation. Other referenced files can be supplied as needed.
@@ -29,3 +29,6 @@ The files and workspace can live locally. External AI processing follows your ch
 Tell us what helps, what feels too deep and what does not sound like you. [Open an issue](https://github.com/muto-labs/agent-skills/issues) with feedback about the standard. Do not post private stories, customer information or personal knowledge-base files in public issues.
 
 Package checks and interface checks have passed locally. Beginner usability, timing and compatibility across AI platforms continue to be evaluated. The skill is a living approach that improves through feedback.
+
+## Updating your workspace
+Your AI saves the source files and rebuilds the workspace. You then reload the open HTML page. Reloading alone cannot rebuild it. Use the visible How to open & update help and Reload saved view button. A temporary preview is not a public website or a substitute for a saved handoff.

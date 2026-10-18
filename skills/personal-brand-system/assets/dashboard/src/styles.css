@@ -4,3 +4,5 @@
 .component-card[role="button"],.asset-row[role="button"]{cursor:pointer}.component-card[role="button"]:focus-visible,.asset-row[role="button"]:focus-visible{outline:3px solid var(--cerulean);outline-offset:3px}.asset-row[role="button"]:hover{background:#f2f8fb}
 
 .fuel-card{border-top-width:3px}.fuel-ready{border-top-color:#006799}.fuel-active{border-top-color:#FC7935}.fuel-usable{border-top-color:#23744A}.fuel-revisit{border-top-color:#72529A}.fuel-status.ready{background:#E7F3F9;color:#104F72}.fuel-status.active{background:#FFF0E6;color:#883A12}.fuel-status.usable{background:#E8F4EC;color:#215D3B}.fuel-status.revisit{background:#F0EAF7;color:#60417E}#fuelFilters{flex-wrap:wrap}
+
+.snapshot-help{background:#e7f3f9;border:1px solid #bdd8e5;border-radius:10px;padding:16px 20px;margin-bottom:28px;color:#104f72}.snapshot-help p{font-size:13px;line-height:1.6;margin:6px 0 10px}.snapshot-help>div{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.snapshot-help small{display:block;font-size:11px;line-height:1.6;margin-top:10px}.snapshot-help .secondary{font-size:12px;padding:8px 12px}
