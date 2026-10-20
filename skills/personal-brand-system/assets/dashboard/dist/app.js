@@ -131,6 +131,12 @@ function filters(selector,set,render){
 }
 filters("#componentFilters",v=>componentFilter=v,components);filters("#assetFilters",v=>assetFilter=v,assets);
 $("#componentSearch").addEventListener("input",components);$("#assetSearch").addEventListener("input",assets);
+const updateDialog=$("#updateViewDialog");
+$("#updateViewButton").addEventListener("click",()=>{ $("#updateCopyFeedback").textContent="";updateDialog.showModal() });
+$("#closeUpdateView").addEventListener("click",()=>{updateDialog.close();$("#updateViewButton").focus()});
+updateDialog.addEventListener("click",e=>{if(e.target===updateDialog){updateDialog.close();$("#updateViewButton").focus()}});
+$("#copyUpdateRequest").addEventListener("click",async()=>{const request=$("#updateViewRequest");try{await navigator.clipboard.writeText(request.value);$("#updateCopyFeedback").textContent="Copied. Paste this into your AI conversation."}catch{request.focus();request.select();$("#updateCopyFeedback").textContent="Request selected. Copy it and paste into your AI conversation."}});
+$("#openUpdateHelp").addEventListener("click",()=>{updateDialog.close();showDoc("references/dashboard-guide.md")});
 $("#reloadSnapshot").addEventListener("click",()=>window.location.reload());
 $("#refreshInfo").addEventListener("click",()=>showDoc("references/dashboard-guide.md"));
 const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible)document.querySelectorAll(".nav-link").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+visible.target.id))},{rootMargin:"-10% 0px -55% 0px",threshold:0});
