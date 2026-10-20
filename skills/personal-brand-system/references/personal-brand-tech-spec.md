@@ -52,3 +52,5 @@ Create the same minimal dashboard during package initialization, before intervie
 
 ## Interview and voice acceptance checks
 At a third exchange on the same topic, the guide reflects and offers a draft, broader discovery or leader-chosen depth. Current-role questions support personal contribution rather than a company audit. New synthesis preserves original language and uses source-backed voice rules; accepted edits improve the guide. Actual leader feedback validates behavior; file checks alone do not prove these controls work.
+
+Follow [canonical claims and wording controls](integrity-guide.md). Preserve evidence status, attribution, measurement units and uncertainty. Record claim IDs and fixed-language versions for each asset; mechanical validation does not replace factual review.

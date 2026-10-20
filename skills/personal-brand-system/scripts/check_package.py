@@ -1,5 +1,5 @@
 """Validate PBS state/package and report progress. Python 3 standard library only."""
-import argparse, hashlib, json, re
+import argparse, hashlib, json, re, runpy
 from pathlib import Path
 
 STATES = {"not started", "in progress", "resolved", "deferred", "not applicable"}
@@ -82,6 +82,9 @@ def main():
     args = parser.parse_args()
     root = args.package.resolve()
     state = json.loads((root / "references/onboarding-state.json").read_text(encoding="utf-8-sig"))
+    registry = root/"references/integrity-register.json"
+    if registry.exists():
+        runpy.run_path(str(root/"scripts/render_asset.py"))["validate_register"](json.loads(registry.read_text(encoding="utf-8-sig")))
     result = summarize(state)
     links = check_links(root)
     result["broken_links"] = links

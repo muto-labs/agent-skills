@@ -1,0 +1,309 @@
+{
+  "version": "0.6.0",
+  "files": {
+    "references/activities.md": {
+      "sha256": "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186",
+      "previous_hashes": [
+        "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186"
+      ]
+    },
+    "references/asset-catalog.md": {
+      "sha256": "b31a9d37050510f582ec665114ad45e2055b81f41124982b8cdf2e65b37e2464",
+      "previous_hashes": [
+        "b31a9d37050510f582ec665114ad45e2055b81f41124982b8cdf2e65b37e2464"
+      ]
+    },
+    "references/dashboard-guide.md": {
+      "sha256": "65ae0f67d7df754fb7757d20136b470ec07ecd97f00d9f40f4d5322d4bb458ab",
+      "previous_hashes": [
+        "65ae0f67d7df754fb7757d20136b470ec07ecd97f00d9f40f4d5322d4bb458ab"
+      ]
+    },
+    "references/integrity-guide.md": {
+      "sha256": "92d48d1b30dd6973edb788b9e72ccc661c8def06111dc658bb4b92076507f647",
+      "previous_hashes": []
+    },
+    "references/interviewing-guide.md": {
+      "sha256": "ea6f5664d935f11672e3337c6d49ace0401251dc3b6e071aa43f2f98ab3436bc",
+      "previous_hashes": [
+        "ea6f5664d935f11672e3337c6d49ace0401251dc3b6e071aa43f2f98ab3436bc"
+      ]
+    },
+    "references/kickoff-guide.md": {
+      "sha256": "d0a05fc2ac6eac9a8541134a2557c32d40e9a5c645a0c34dff2ee226221b4141",
+      "previous_hashes": [
+        "d0a05fc2ac6eac9a8541134a2557c32d40e9a5c645a0c34dff2ee226221b4141"
+      ]
+    },
+    "references/maintenance.md": {
+      "sha256": "753c04a34f086e1758ad28ef7c280bae6363e5ea05ff4fd692f6e9efd4ab6461",
+      "previous_hashes": [
+        "753c04a34f086e1758ad28ef7c280bae6363e5ea05ff4fd692f6e9efd4ab6461"
+      ]
+    },
+    "references/onboarding-scoring.md": {
+      "sha256": "91e0d016940a5677a7e4cb05b7373b54b6d08c8766af5c9f28b4e989003e9c3c",
+      "previous_hashes": [
+        "91e0d016940a5677a7e4cb05b7373b54b6d08c8766af5c9f28b4e989003e9c3c"
+      ]
+    },
+    "references/personal-brand-tech-spec.md": {
+      "sha256": "6570e7ae4debee69ceff5882b08a83b7b03bb41fbee570540da171ad9369c1a7",
+      "previous_hashes": [
+        "e874908b2f8259e9a16e6e6478b891fa107d279c7adda7642292ecab50ecd9c1"
+      ]
+    },
+    "references/update-guide.md": {
+      "sha256": "069908ee62ec8efcecef3e325c92e945ab2635e06c06f6bd2faa466946fe2542",
+      "previous_hashes": []
+    },
+    "references/voice-preservation.md": {
+      "sha256": "2bec8b334050b2ad49252a54ba7b9333e45aec905e4147af4098f75041cb70ce",
+      "previous_hashes": [
+        "2bec8b334050b2ad49252a54ba7b9333e45aec905e4147af4098f75041cb70ce"
+      ]
+    },
+    "scripts/build_dashboard.py": {
+      "sha256": "757144b0de380da84c6fb8f264fbac73af7df6fd7b1db5a5d476042a3d8973b7",
+      "previous_hashes": [
+        "757144b0de380da84c6fb8f264fbac73af7df6fd7b1db5a5d476042a3d8973b7"
+      ]
+    },
+    "scripts/check_package.py": {
+      "sha256": "56737574ea850319765613addc2a70f70b0dc55c4e499cdf9046e4ff15abf069",
+      "previous_hashes": [
+        "9ea7f0183fa8c10d1a3c66cec264ea794dfdc76f6534bf4fb821cd51688c6c41"
+      ]
+    },
+    "scripts/init_leader.py": {
+      "sha256": "829a3e1fa9502d0cdba59f232675c35a42b618a3a32242a340aee4636abd9157",
+      "previous_hashes": [
+        "829a3e1fa9502d0cdba59f232675c35a42b618a3a32242a340aee4636abd9157"
+      ]
+    },
+    "scripts/render_asset.py": {
+      "sha256": "9850e4815cd57bf2d3b5e40a67dcde1acb4f268bdf8c3a623ba2ef73a003f62e",
+      "previous_hashes": []
+    },
+    "scripts/update_leader.py": {
+      "sha256": "0ee5976253e4670da8159928c4afc842bf43b1d8d61e8485ebf9f399b9660e7f",
+      "previous_hashes": []
+    },
+    "references/fuel/contribution.md": {
+      "sha256": "a4fad1f4f84a45dc927619032e6726c899344982f58c1f92794f0878ee027c3d",
+      "previous_hashes": [
+        "a4fad1f4f84a45dc927619032e6726c899344982f58c1f92794f0878ee027c3d"
+      ]
+    },
+    "references/fuel/field-test.md": {
+      "sha256": "3be88515f40684616f765ef1627b39ae76011d86617abf2511b21a45b4b041d8",
+      "previous_hashes": [
+        "3be88515f40684616f765ef1627b39ae76011d86617abf2511b21a45b4b041d8"
+      ]
+    },
+    "references/fuel/future.md": {
+      "sha256": "04b8474144bb5c84d15b589b246e962f515ffb421ebcd02cd1b880859a5ac3b7",
+      "previous_hashes": [
+        "04b8474144bb5c84d15b589b246e962f515ffb421ebcd02cd1b880859a5ac3b7"
+      ]
+    },
+    "references/fuel/journey.md": {
+      "sha256": "1f0c5e40d6b4b47d065dcce0dcf161de96092f99dc184e9e9635e853ba353b30",
+      "previous_hashes": [
+        "1f0c5e40d6b4b47d065dcce0dcf161de96092f99dc184e9e9635e853ba353b30"
+      ]
+    },
+    "references/fuel/opportunity.md": {
+      "sha256": "f4905f23ee20d1e19b17463a29aa89c50bea67b608575b10c0eafcb14b0c4d50",
+      "previous_hashes": [
+        "f4905f23ee20d1e19b17463a29aa89c50bea67b608575b10c0eafcb14b0c4d50"
+      ]
+    },
+    "references/fuel/origin.md": {
+      "sha256": "b0a9dd466d64e4165ef9488783639d54b0245017aa9931a9d20f566d5bd62f29",
+      "previous_hashes": [
+        "b0a9dd466d64e4165ef9488783639d54b0245017aa9931a9d20f566d5bd62f29"
+      ]
+    },
+    "references/fuel/purpose.md": {
+      "sha256": "201da1c070a785bb210e1ade32d782cb4a1b6273c0b2569de4ed5fc2d6e1f32c",
+      "previous_hashes": [
+        "201da1c070a785bb210e1ade32d782cb4a1b6273c0b2569de4ed5fc2d6e1f32c"
+      ]
+    },
+    "references/fuel/relationships.md": {
+      "sha256": "8d8d64257fae4e65698c80ab67c199a2f54606fa233fb44ab55a8d5652033857",
+      "previous_hashes": [
+        "8d8d64257fae4e65698c80ab67c199a2f54606fa233fb44ab55a8d5652033857"
+      ]
+    },
+    "references/fuel/reputation.md": {
+      "sha256": "dbe155ecb39468a8471440715be4ae6221e354afba2d6a1b0ffa12d961983010",
+      "previous_hashes": [
+        "dbe155ecb39468a8471440715be4ae6221e354afba2d6a1b0ffa12d961983010"
+      ]
+    },
+    "references/fuel/trust.md": {
+      "sha256": "5fceb6ca50a349ec37bf4e9417ae4f26cd512f9b36f138b6f0c285c9c5fde1a6",
+      "previous_hashes": [
+        "5fceb6ca50a349ec37bf4e9417ae4f26cd512f9b36f138b6f0c285c9c5fde1a6"
+      ]
+    },
+    "references/fuel/voice.md": {
+      "sha256": "32a5c1bc83a4ad0d80e3e66ac95089b6fe24d441583f08ad47020195b5cc1386",
+      "previous_hashes": [
+        "32a5c1bc83a4ad0d80e3e66ac95089b6fe24d441583f08ad47020195b5cc1386"
+      ]
+    },
+    "assets/templates/about-contribution.md": {
+      "sha256": "e5eaa2a58c25a884548c0fdac8b9f9e84e984fe49b32e4b4a5279da90d983db5",
+      "previous_hashes": [
+        "e5eaa2a58c25a884548c0fdac8b9f9e84e984fe49b32e4b4a5279da90d983db5"
+      ]
+    },
+    "assets/templates/about-origin.md": {
+      "sha256": "94ab6a4dbcef38aeeca3ff02a6669bc2ad1be950cb58b81a4a659443c4630b95",
+      "previous_hashes": [
+        "94ab6a4dbcef38aeeca3ff02a6669bc2ad1be950cb58b81a4a659443c4630b95"
+      ]
+    },
+    "assets/templates/agent-briefing.md": {
+      "sha256": "1dabb3f285437dfd1c3e31fe23351c8bcbe09edbbdaa8b702d63aa0461007d32",
+      "previous_hashes": [
+        "1dabb3f285437dfd1c3e31fe23351c8bcbe09edbbdaa8b702d63aa0461007d32"
+      ]
+    },
+    "assets/templates/bio-narrative.md": {
+      "sha256": "34d06535e64c08c53fbda0cf6c7b4a37852bbb4fbe9b9b4ea35830fae24a4dd2",
+      "previous_hashes": [
+        "34d06535e64c08c53fbda0cf6c7b4a37852bbb4fbe9b9b4ea35830fae24a4dd2"
+      ]
+    },
+    "assets/templates/bio-professional.md": {
+      "sha256": "3324edd0291562587b2810b81bb7eb133d7d868d525b7fa4e6fc9468a742ac48",
+      "previous_hashes": [
+        "3324edd0291562587b2810b81bb7eb133d7d868d525b7fa4e6fc9468a742ac48"
+      ]
+    },
+    "assets/templates/content-plan.md": {
+      "sha256": "891c706d7281b460ec39ac2641236f70027a5a93967a9e00c4ff4cdae35683bf",
+      "previous_hashes": [
+        "891c706d7281b460ec39ac2641236f70027a5a93967a9e00c4ff4cdae35683bf"
+      ]
+    },
+    "assets/templates/core-messages.md": {
+      "sha256": "939b30892a18245066151c26cbe3deb0c6f1b6b5f4b6f28385db6662c41dae23",
+      "previous_hashes": [
+        "939b30892a18245066151c26cbe3deb0c6f1b6b5f4b6f28385db6662c41dae23"
+      ]
+    },
+    "assets/templates/development-review.md": {
+      "sha256": "a9c49b96f0b315809e8c24eadfda54fd430751184ae41434e93d7ef3e44f9673",
+      "previous_hashes": [
+        "a9c49b96f0b315809e8c24eadfda54fd430751184ae41434e93d7ef3e44f9673"
+      ]
+    },
+    "assets/templates/foundation.md": {
+      "sha256": "dcec9b1b94085ce6c07731377fb07c6621a884b87ab77312ae40749f731ffed0",
+      "previous_hashes": [
+        "dcec9b1b94085ce6c07731377fb07c6621a884b87ab77312ae40749f731ffed0"
+      ]
+    },
+    "assets/templates/leadership-note.md": {
+      "sha256": "1d3f863250b962c6066fff8df66b1d3205e37c33caf09428e7c7fe43d966a0b0",
+      "previous_hashes": [
+        "1d3f863250b962c6066fff8df66b1d3205e37c33caf09428e7c7fe43d966a0b0"
+      ]
+    },
+    "assets/templates/linkedin-profile.md": {
+      "sha256": "c0be9ef3678529856982773a40c0e434b0af8cdac2d0709c74b39c69529f1b64",
+      "previous_hashes": [
+        "c0be9ef3678529856982773a40c0e434b0af8cdac2d0709c74b39c69529f1b64"
+      ]
+    },
+    "assets/templates/one-page-profile.md": {
+      "sha256": "9da8de72faf4576efb341a8b86711eed5d48c073ef40c157e5025d7fdd8832a4",
+      "previous_hashes": [
+        "9da8de72faf4576efb341a8b86711eed5d48c073ef40c157e5025d7fdd8832a4"
+      ]
+    },
+    "assets/templates/pitch-outcome.md": {
+      "sha256": "fae7609a62f1468dea1f93df9d463e8b5b08cd7da6cf4768a378ab5c230d157d",
+      "previous_hashes": [
+        "fae7609a62f1468dea1f93df9d463e8b5b08cd7da6cf4768a378ab5c230d157d"
+      ]
+    },
+    "assets/templates/pitch-story.md": {
+      "sha256": "70bb9ad3d24391ad2e1f42d6e318dc17bc6396b609f9a91da944b7201e7522a4",
+      "previous_hashes": [
+        "70bb9ad3d24391ad2e1f42d6e318dc17bc6396b609f9a91da944b7201e7522a4"
+      ]
+    },
+    "assets/templates/positioning.md": {
+      "sha256": "14458a9c6636fe1ae817e5aa14ecece79babf38e522a4401e7c3977d965e2e82",
+      "previous_hashes": [
+        "14458a9c6636fe1ae817e5aa14ecece79babf38e522a4401e7c3977d965e2e82"
+      ]
+    },
+    "assets/templates/presence-plan.md": {
+      "sha256": "8a00d7d25e5fbaf9d21ac9ae4617a87a1a1e2f2275fdb6f2ed02bfb4bbde3cd0",
+      "previous_hashes": [
+        "8a00d7d25e5fbaf9d21ac9ae4617a87a1a1e2f2275fdb6f2ed02bfb4bbde3cd0"
+      ]
+    },
+    "assets/templates/proof-bank.md": {
+      "sha256": "aa982501b6fef4227870cc1ba18378c2d2988f8e9f525179fb462a4e2386ce7b",
+      "previous_hashes": [
+        "d652d011e38008ebb81b6e9c6f4cba61b6bc456c02afde2f1aa8ecc1271d7709"
+      ]
+    },
+    "assets/templates/relationship-plan.md": {
+      "sha256": "e5512a4c5ca8328d6342295cb81aa49d604d227fbd6b2aab43406daeee1535b7",
+      "previous_hashes": [
+        "e5512a4c5ca8328d6342295cb81aa49d604d227fbd6b2aab43406daeee1535b7"
+      ]
+    },
+    "assets/templates/story-card.md": {
+      "sha256": "745847bda1db5c2184e6b631ef3c48bbcdf5cd783a436e33534be71f83ce7e1d",
+      "previous_hashes": [
+        "745847bda1db5c2184e6b631ef3c48bbcdf5cd783a436e33534be71f83ce7e1d"
+      ]
+    },
+    "assets/templates/visual-direction.md": {
+      "sha256": "ede057885cfe9f5dea0e0ee0e23cdc2c4fd92db6d4a9aaf93a0efe388050d57f",
+      "previous_hashes": [
+        "ede057885cfe9f5dea0e0ee0e23cdc2c4fd92db6d4a9aaf93a0efe388050d57f"
+      ]
+    },
+    "assets/templates/voice-guide.md": {
+      "sha256": "bc0812e15c5422f2575a197252cd31479bc6a6876c25a64d523beec750063409",
+      "previous_hashes": [
+        "bc0812e15c5422f2575a197252cd31479bc6a6876c25a64d523beec750063409"
+      ]
+    },
+    "assets/templates/website-brief.md": {
+      "sha256": "c04d74d8b18684b6d94a92b6243343f0e59c6e34adf4d28514ed2a0cab881f67",
+      "previous_hashes": [
+        "c04d74d8b18684b6d94a92b6243343f0e59c6e34adf4d28514ed2a0cab881f67"
+      ]
+    },
+    "assets/dashboard/src/app.js": {
+      "sha256": "da08096cd0dd51123be354300ed058f42e2bbb4d33fe051afc2fc9a5bae4eac5",
+      "previous_hashes": [
+        "da08096cd0dd51123be354300ed058f42e2bbb4d33fe051afc2fc9a5bae4eac5"
+      ]
+    },
+    "assets/dashboard/src/index.html": {
+      "sha256": "d5ce665bcf7ec08659f25dcbc4c2c1a0986abdb34cdcad899855c8eae0c9d72a",
+      "previous_hashes": [
+        "d5ce665bcf7ec08659f25dcbc4c2c1a0986abdb34cdcad899855c8eae0c9d72a"
+      ]
+    },
+    "assets/dashboard/src/styles.css": {
+      "sha256": "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8",
+      "previous_hashes": [
+        "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8"
+      ]
+    }
+  }
+}

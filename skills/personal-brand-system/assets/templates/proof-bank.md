@@ -16,3 +16,5 @@ Fictional; not a leader fact: Claim: clarified ownership. Evidence: supplied pro
 Never turn team results into individual credit; uncertainty explicit.
 Adapt audience, tone and length without changing factual claims. Record source IDs, KB/template versions and review status in the asset registry. No public use until the leader reviews and approves that version/context.
 
+
+Follow [canonical claims and wording controls](../../references/integrity-guide.md). Preserve evidence status, attribution, measurement units and uncertainty. Record claim IDs and fixed-language versions for each asset; mechanical validation does not replace factual review.

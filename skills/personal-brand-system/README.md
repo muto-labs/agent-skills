@@ -1,5 +1,5 @@
 # Personal Brand System — start here
-Version 0.5.1 | Early pilot release
+Version 0.6.0 | Early pilot release
 
 Build a personal brand you can use with AI and improve over time. No previous branding experience or polished answers required.
 
@@ -28,3 +28,9 @@ Extract this package, then open `assets/dashboard/PB-personal-brand-dashboard.ht
 
 ## Keep the visual workspace current
 Ask your AI to save your files and rebuild the workspace, then reload the browser page. The visible Reload saved view button only reloads the HTML; it cannot rebuild it. Keep the whole extracted package and a private personal copy. If your AI cannot write or run files, ask for explicit manual saving and rebuilding instructions. A preview link is not the same as a saved file or public website.
+
+## Already have a personal package?
+Do not replace your personal folder. Follow [safe update instructions](references/update-guide.md): separate download, preview, backup, preserve customizations, rebuild and reload.
+
+## Accurate assets
+Use the canonical register and [integrity controls](references/integrity-guide.md) to preserve facts, evidence status and fixed language. These checks do not independently verify a claim.
