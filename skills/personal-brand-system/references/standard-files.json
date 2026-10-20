@@ -1,5 +1,5 @@
 {
-  "version": "0.6.1",
+  "version": "0.6.2",
   "files": {
     "references/activities.md": {
       "sha256": "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186",
@@ -58,7 +58,7 @@
       "previous_hashes": []
     },
     "references/voice-preservation.md": {
-      "sha256": "2bec8b334050b2ad49252a54ba7b9333e45aec905e4147af4098f75041cb70ce",
+      "sha256": "ffd9bb46269a94ff2f1d260dfedd47d5f9350b1457c2bb09d8a5cfe764f0e57a",
       "previous_hashes": [
         "2bec8b334050b2ad49252a54ba7b9333e45aec905e4147af4098f75041cb70ce"
       ]

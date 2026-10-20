@@ -6,10 +6,10 @@ Build a living collection of your stories, goals, experience and preferences, th
 
 The Personal Brand skill includes a living knowledge-base template, interviewing guide, source-based voice guidance, 22 asset template recipes, a presence roadmap, progress tracking, Fuel experiences and a local visual workspace.
 
-**Current version: 0.6.1 · Early pilot release**
+**Current version: 0.6.2 · Early pilot release**
 
 ## Download and start
-1. [Download the Personal Brand skill ZIP](downloads/personal-brand-system-v0.6.1.zip?raw=true). Extract it on your computer.
+1. [Download the Personal Brand skill ZIP](downloads/personal-brand-system-v0.6.2.zip?raw=true). Extract it on your computer.
 2. Open `personal-brand-system/README.md` for getting-started instructions.
 3. Open `personal-brand-system/assets/dashboard/PB-personal-brand-dashboard.html` in your browser to explore a clean example. No server is needed for viewing.
 4. Give your AI the skill folder if it supports skills, or share `SKILL.md` and `references/kickoff-guide.md` in the conversation. Other referenced files can be supplied as needed.
@@ -36,4 +36,4 @@ Your AI saves the source files and rebuilds the workspace. You then reload the o
 ## Existing users: update safely
 Download the new standard separately. Do not extract it over your personal folder. Follow [the update guide](skills/personal-brand-system/references/update-guide.md): preview, backup, preserve personal files and merge customized conflicts before rebuilding and reloading.
 
-Version 0.6.1 adds canonical claims/approved language with evidence status, exact-text reuse and source dependencies. These controls support source review; they are not independent fact verification.
+Version 0.6.2 strengthens voice activation for each channel and preserves approved assets during testing. Earlier integrity controls retain evidence status, exact-text reuse and source dependencies; these support source review rather than independent fact verification.

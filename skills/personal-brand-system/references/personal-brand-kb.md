@@ -1,5 +1,5 @@
 # Personal Brand KB
-KB version: 0.1.0 | Standard: 0.6.1 | Leader: not initialized
+KB version: 0.1.0 | Standard: 0.6.2 | Leader: not initialized
 Default disclosure: private; no public approval presumed.
 ## Record conventions
 Knowledge records: ID | statement | type (confirmed fact / interpretation / aspiration / unknown) | source/date | leader review | disclosure (private / review required / public approved).
