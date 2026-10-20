@@ -12,3 +12,5 @@
 .asset-preview{display:block;max-width:100%;height:auto;margin:16px auto;border-radius:8px;border:1px solid var(--line,#d6e1e8)}
 
 .channel-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:-6px 0 22px;font-size:12px}.channel-links a{color:var(--dark);text-decoration:underline;text-underline-offset:3px}.channel-links a:hover{color:var(--cerulean)}
+
+.channel-links a{display:inline-flex;align-items:center;gap:6px}.channel-icon{width:15px;height:15px;flex:none;fill:currentColor}
