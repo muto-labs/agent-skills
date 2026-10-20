@@ -87,7 +87,7 @@ def build(package):
     initials = state.get("output_prefix") or "PB"
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,32}", initials): raise ValueError("Unsafe output prefix")
     presentation = {"initials":initials,"profile":profile,"role":role,"purpose":purpose,"ready":bool(profile and complete(["M2","M3"]))}
-    data = {"leader":state["leader"],"date":state["updated"],"version":state["standard_version"],"state":state,"summary":summarize(state),"components":config["components"],"fuel":config.get("fuel",[]),"assets":assets,"docs":docs,"files":files,"presentation":presentation}
+    data = {"leader":state["leader"],"date":state["updated"],"version":state["standard_version"],"state":state,"summary":summarize(state),"components":config["components"],"fuel":config.get("fuel",[]),"assets":assets,"channels":config.get("channel_links",[]),"docs":docs,"files":files,"presentation":presentation}
     destination = package/"assets/dashboard/dist"
     destination.mkdir(parents=True,exist_ok=True)
     for name in ["index.html","styles.css","app.js"]:

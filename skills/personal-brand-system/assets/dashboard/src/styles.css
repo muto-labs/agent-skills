@@ -10,3 +10,5 @@
 #updateViewDialog{width:min(660px,calc(100vw - 32px))}.update-view-body{padding:16px 28px 28px;font-size:14px;line-height:1.65}.update-view-body h3{font-size:17px;margin-top:24px}.update-view-body label{display:block;font-size:12px;font-weight:600}.update-view-body textarea{box-sizing:border-box;width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font:inherit;font-size:12px;line-height:1.6;background:#f5f8fa;color:var(--ink);resize:vertical;margin:6px 0 12px}.update-view-body small{font-size:11px;color:#536b79}#updateCopyFeedback{display:block;font-size:12px;margin-top:8px}.hero-buttons{flex-wrap:wrap}
 
 .asset-preview{display:block;max-width:100%;height:auto;margin:16px auto;border-radius:8px;border:1px solid var(--line,#d6e1e8)}
+
+.channel-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:-6px 0 22px;font-size:12px}.channel-links a{color:var(--dark);text-decoration:underline;text-underline-offset:3px}.channel-links a:hover{color:var(--cerulean)}

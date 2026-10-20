@@ -1,5 +1,5 @@
 {
-  "standard_version": "0.6.4",
+  "standard_version": "0.6.5",
   "snapshot_date": "2026-10-11",
   "standalone": "assets/dashboard/PB-personal-brand-dashboard.html",
   "profile": null,
@@ -10,5 +10,5 @@
     "remaining": 30,
     "active_minutes": null
   },
-  "source_digest": "2b1b4ed60a2bd01d26bc7a4e2bc4ae526536f6d77fd1a8ee505101524c9078fd"
+  "source_digest": "6c4cc5b18c3eade634537f070c07361d47bb6a05c23b7b7c18d7260fd9b37680"
 }

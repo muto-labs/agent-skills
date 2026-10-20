@@ -37,3 +37,6 @@ The compact Update my view button beside See what's next opens help, a copyable 
 
 ## Visual asset previews
 For a visual asset, put a Markdown image preview near the top of its output document, plus named links to the export, editable source and companion text. The builder embeds linked local PNG/JPEG/GIF/WebP previews in the saved dashboard and indexes existing package-local file links. Rebuild after image changes. Check the actual detail preview and file links, not just file existence. The source package is still needed for editing and opening original files; no external media is fetched or embedded.
+
+## Channel shortcuts
+Use dashboard-config.json channel_links for a compact links row below the leader identity. Each entry records label, url, personal/business scope and source. Include personal LinkedIn, organization LinkedIn, YouTube and website only when relevant and sourced; use clear organization labels and do not imply ownership from a public listing. Reuse known URLs, confirm ambiguous matches and never invent missing ones. The clean standard has an empty list; hide the row until links exist. Ask only for missing links in the chosen scope, without adding required channels. Links open in a new tab; only HTTP(S) URLs render. Preserve this leader-specific configuration during upgrades.

@@ -256,5 +256,6 @@
       "when": "You want evidence that your positioning or content actually connects.",
       "doc": "references/fuel/field-test.md"
     }
-  ]
+  ],
+  "channel_links": []
 }

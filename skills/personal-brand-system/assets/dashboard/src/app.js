@@ -16,6 +16,9 @@ $("#remainingCount").textContent=D.summary.remaining;
 $("#deferredCount").textContent=D.summary.deferred;
 $("#activeTime").textContent=D.summary.active_minutes===null?"Not measured":"≈ "+D.summary.active_minutes+" min";
 
+const channels=(D.channels||[]).filter(c=>{try{const u=new URL(c.url);return ["https:","http:"].includes(u.protocol)&&!u.username&&!u.password}catch{return false}});
+$("#channelLinks").innerHTML=channels.map(c=>'<a href="'+esc(c.url)+'" target="_blank" rel="noopener noreferrer">'+esc(c.label)+' <span aria-hidden="true">↗</span></a>').join("");
+$("#channelLinks").hidden=!channels.length;
 const P=D.presentation;
 document.title=P.initials+" · Personal Brand";
 $(".brand-mark").textContent=P.initials.toLowerCase()+".";
