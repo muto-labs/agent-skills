@@ -1,5 +1,5 @@
 {
-  "version": "0.6.3",
+  "version": "0.6.4",
   "files": {
     "references/activities.md": {
       "sha256": "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186",
@@ -14,9 +14,10 @@
       ]
     },
     "references/dashboard-guide.md": {
-      "sha256": "f87a1402866c54d2dce0a97afb4b7246a2a944e2a0126dbf90f8655e4b99865f",
+      "sha256": "98cd05adb651849e1a5d6e4e63046e8d6bfcf3968ea74ebe14ffa65cede19388",
       "previous_hashes": [
-        "65ae0f67d7df754fb7757d20136b470ec07ecd97f00d9f40f4d5322d4bb458ab"
+        "65ae0f67d7df754fb7757d20136b470ec07ecd97f00d9f40f4d5322d4bb458ab",
+        "f87a1402866c54d2dce0a97afb4b7246a2a944e2a0126dbf90f8655e4b99865f"
       ]
     },
     "references/integrity-guide.md": {
@@ -64,7 +65,7 @@
       ]
     },
     "scripts/build_dashboard.py": {
-      "sha256": "757144b0de380da84c6fb8f264fbac73af7df6fd7b1db5a5d476042a3d8973b7",
+      "sha256": "d01a11a37a2516592e1bc99697445a702bb71e18eb6794c47889aa78c6a36149",
       "previous_hashes": [
         "757144b0de380da84c6fb8f264fbac73af7df6fd7b1db5a5d476042a3d8973b7"
       ]
@@ -288,9 +289,10 @@
       ]
     },
     "assets/dashboard/src/app.js": {
-      "sha256": "bf64fbb689387e8de315685645948e14a1fb6a1e1fe4d638c3fab18cc36c66fa",
+      "sha256": "08f175b8f98663df9639393adbcd6ba48bc2add4886d96e71f9d53e19e6b45e9",
       "previous_hashes": [
-        "da08096cd0dd51123be354300ed058f42e2bbb4d33fe051afc2fc9a5bae4eac5"
+        "da08096cd0dd51123be354300ed058f42e2bbb4d33fe051afc2fc9a5bae4eac5",
+        "bf64fbb689387e8de315685645948e14a1fb6a1e1fe4d638c3fab18cc36c66fa"
       ]
     },
     "assets/dashboard/src/index.html": {
@@ -300,9 +302,10 @@
       ]
     },
     "assets/dashboard/src/styles.css": {
-      "sha256": "c0de8e6317257c65a4a72033937b2a8af69900c7393699d6c6bf1240ca86fde5",
+      "sha256": "42162a25f1eec9c16531bdbe002cb313554541fbae077ab7c9a3e0cd7e64a02d",
       "previous_hashes": [
-        "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8"
+        "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8",
+        "c0de8e6317257c65a4a72033937b2a8af69900c7393699d6c6bf1240ca86fde5"
       ]
     },
     "references/visual-start.md": {

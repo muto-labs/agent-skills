@@ -61,24 +61,24 @@ $("#openCount").textContent=open.length+" items";
 $("#openItems").innerHTML=open.map(i=>'<div class="open-item"><span class="open-marker" aria-hidden="true"></span><div><strong>'+esc(i.label)+'</strong><small>'+esc(i.id)+" · "+esc(i.milestone)+" · "+esc(i.state)+(i.evidence?" — "+esc(i.evidence):"")+'</small></div></div>').join("");
 $("#deferredWork").innerHTML=D.state.deferred_work.map(s=>"<li>"+esc(s)+"</li>").join("");
 
-function resolveDoc(target,base){
- const u=new URL(target,"https://local/"+base);
- const key=decodeURIComponent(u.pathname.slice(1));
- return D.docs[key]?key:null;
+function localKey(target,base){
+ try{const u=new URL(target,"https://local/"+base);if(u.origin!=="https://local")return null;return decodeURIComponent(u.pathname.slice(1))}catch{return null}
 }
+function resolveDoc(target,base){const key=localKey(target,base);return key&&D.docs[key]?key:null}
+function fileHref(key){return (D.sourcePrefix||"../../../")+key.split("/").map(encodeURIComponent).join("/")}
 function inline(raw,base){
  const tokens=[];
- raw=String(raw).replace(/\[([^\]]+)\]\(([^)]+)\)/g,(_,label,url)=>{
-  const key=resolveDoc(url,base);
-  let link;
-  if(key)link='<a href="#" data-doc="'+esc(key)+'">'+esc(label)+'</a>';
-  else if(/^https?:\/\//i.test(url))link='<a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(label)+' ↗</a>';
+ raw=String(raw).replace(/(!?)\[([^\]]*)\]\(([^)]+)\)/g,(_,image,label,url)=>{
+  const key=localKey(url,base),file=key&&(D.files||{})[key];let link;
+  if(image&&file&&file.preview)link='<img class="asset-preview" src="'+esc(file.preview)+'" alt="'+esc(label)+'">';
+  else if(key&&D.docs[key])link='<a href="#" data-doc="'+esc(key)+'">'+esc(label)+'</a>';
+  else if(file)link='<a href="'+esc(fileHref(key))+'" target="_blank" rel="noopener">'+esc(label)+' ↗</a>';
+  else if(/^https?:\/\//i.test(url)&&!image)link='<a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(label)+' ↗</a>';
   else link=esc(label);
   const token="PBSTOKEN"+tokens.length+"END";tokens.push(link);return token;
  });
  let out=esc(raw).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/`([^`]+)`/g,"<code>$1</code>");
- tokens.forEach((v,i)=>{out=out.replace("PBSTOKEN"+i+"END",v)});
- return out;
+ tokens.forEach((v,i)=>{out=out.replace("PBSTOKEN"+i+"END",v)});return out;
 }
 function markdown(text,base){
  const lines=text.split(/\r?\n/);let out=[],paragraph=[],list=[],listType="",code=null,table=[];

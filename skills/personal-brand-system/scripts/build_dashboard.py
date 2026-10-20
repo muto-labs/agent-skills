@@ -1,6 +1,6 @@
 """Build an offline-capable PBS dashboard from the current package. No external dependencies."""
 from pathlib import Path
-import argparse, json, re, shutil, runpy
+import argparse, json, re, shutil, runpy, base64, mimetypes
 
 def build(package):
     package = package.resolve()
@@ -16,6 +16,22 @@ def build(package):
             text = p.read_text(encoding="utf-8-sig")
             title = next((l.lstrip("# ").strip() for l in text.splitlines() if l.startswith("# ")), p.stem)
             docs[p.relative_to(package).as_posix()] = {"title":title,"text":text}
+    # Index only existing package-local linked files. Embed raster previews so the
+    # standalone dashboard can show them without a server or adjacent media.
+    files = {}
+    for docpath, doc in docs.items():
+        for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", doc["text"]):
+            if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:|^[/#]", target):
+                continue
+            candidate = (package/Path(docpath).parent/target.split("#",1)[0]).resolve()
+            if not candidate.is_relative_to(package) or not candidate.is_file():
+                continue
+            key = candidate.relative_to(package).as_posix()
+            entry = {"name":candidate.name}
+            if candidate.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp"}:
+                mime = mimetypes.guess_type(candidate.name)[0]
+                entry["preview"] = "data:"+mime+";base64,"+base64.b64encode(candidate.read_bytes()).decode("ascii")
+            files[key] = entry
     skill = (package/"SKILL.md").read_text(encoding="utf-8-sig")
     docs["SKILL.md"] = {"title":"Personal Brand Skill","text":skill}
     for c in config["components"]:
@@ -71,7 +87,7 @@ def build(package):
     initials = state.get("output_prefix") or "PB"
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,32}", initials): raise ValueError("Unsafe output prefix")
     presentation = {"initials":initials,"profile":profile,"role":role,"purpose":purpose,"ready":bool(profile and complete(["M2","M3"]))}
-    data = {"leader":state["leader"],"date":state["updated"],"version":state["standard_version"],"state":state,"summary":summarize(state),"components":config["components"],"fuel":config.get("fuel",[]),"assets":assets,"docs":docs,"presentation":presentation}
+    data = {"leader":state["leader"],"date":state["updated"],"version":state["standard_version"],"state":state,"summary":summarize(state),"components":config["components"],"fuel":config.get("fuel",[]),"assets":assets,"docs":docs,"files":files,"presentation":presentation}
     destination = package/"assets/dashboard/dist"
     destination.mkdir(parents=True,exist_ok=True)
     for name in ["index.html","styles.css","app.js"]:
