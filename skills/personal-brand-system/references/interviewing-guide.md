@@ -44,3 +44,5 @@ Save corrected knowledge, accepted asset/status, state changes, unresolved/defer
 Create the same minimal dashboard during package initialization, before interviewing. Rebuild after meaningful saved knowledge, progress, time, asset or review changes before ending the turn. See dashboard-guide.md; preserve the stable HTML path and do not infer completed work from dashboard creation.
 
 For synthesis and drafting, follow [voice preservation](voice-preservation.md).
+
+When visual work becomes relevant, use [the two-track visual start](visual-start.md). Existing materials may be partial; a beginner needs only a small working direction. Do not reopen a visual deferral or add this to kickoff by default.

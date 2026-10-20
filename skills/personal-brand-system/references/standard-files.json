@@ -1,5 +1,5 @@
 {
-  "version": "0.6.2",
+  "version": "0.6.3",
   "files": {
     "references/activities.md": {
       "sha256": "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186",
@@ -24,7 +24,7 @@
       "previous_hashes": []
     },
     "references/interviewing-guide.md": {
-      "sha256": "ea6f5664d935f11672e3337c6d49ace0401251dc3b6e071aa43f2f98ab3436bc",
+      "sha256": "a7f51bd2c2eec90a3231bd6134971424b8f07fe5008a95be37858a9b3a1a43c4",
       "previous_hashes": [
         "ea6f5664d935f11672e3337c6d49ace0401251dc3b6e071aa43f2f98ab3436bc"
       ]
@@ -270,7 +270,7 @@
       ]
     },
     "assets/templates/visual-direction.md": {
-      "sha256": "ede057885cfe9f5dea0e0ee0e23cdc2c4fd92db6d4a9aaf93a0efe388050d57f",
+      "sha256": "5de85fd08144495dc9a9729ce9f072bbd9f46dff7cea093722fa9fc8cf98f7e8",
       "previous_hashes": [
         "ede057885cfe9f5dea0e0ee0e23cdc2c4fd92db6d4a9aaf93a0efe388050d57f"
       ]
@@ -304,6 +304,10 @@
       "previous_hashes": [
         "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8"
       ]
+    },
+    "references/visual-start.md": {
+      "sha256": "eda43c4ce64173d80e1c769fb3ebdf27bea21e9a5a02b4cec7a5925a25a3982e",
+      "previous_hashes": []
     }
   }
 }

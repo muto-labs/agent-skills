@@ -1,5 +1,5 @@
 # Personal Brand System — start here
-Version 0.6.2 | Early pilot release
+Version 0.6.3 | Early pilot release
 
 Build a personal brand you can use with AI and improve over time. No previous branding experience or polished answers required.
 
