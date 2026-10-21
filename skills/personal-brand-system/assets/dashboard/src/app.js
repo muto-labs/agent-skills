@@ -28,9 +28,11 @@ $(".brand-mark").textContent=P.initials.toLowerCase()+".";
 $(".avatar").textContent=P.initials;
 $("#leaderRole").textContent=P.role;
 $("#purposeText").textContent=P.purpose;
+const foundationComplete=D.state.items.length>0&&D.state.items.every(item=>["resolved","not applicable"].includes(item.state));
+if(foundationComplete){const b=document.querySelector(".progress-panel .panel-top .badge");b.textContent="Foundation complete";b.classList.remove("review");b.classList.add("accepted")}
 $("#readinessTitle").textContent=P.ready?"Ready to put to work":"Ready to begin";
-$("#readinessDescription").textContent=P.ready?"Accepted knowledge and assets are available for reuse. Initial onboarding remains open.":"Your knowledge and assets will grow as you work. Start with what matters to you.";
-$("#profileButton").dataset.doc=P.profile||"references/kickoff-guide.md";
+$("#readinessDescription").textContent=foundationComplete?"Your initial foundation is complete. Keep growing it through use and feedback.":P.ready?"Accepted knowledge and assets are available for reuse. Initial onboarding remains open.":"Your knowledge and assets will grow as you work. Start with what matters to you.";
+$("#profileButton").dataset.doc=P.profile||"references/leader-welcome.md";
 $("#profileButton").innerHTML=(P.profile?"Read my profile":"Start here")+' <span>↗</span>';
 $("#footerBrand").textContent=P.initials+" · Personal Brand";
 const milestoneDone=m=>D.state.items.filter(i=>i.id.startsWith(m+".")).every(i=>i.state==="resolved"||i.state==="not applicable");
@@ -145,8 +147,18 @@ $("#copyUpdateRequest").addEventListener("click",async()=>{const request=$("#upd
 $("#openUpdateHelp").addEventListener("click",()=>{updateDialog.close();showDoc("references/dashboard-guide.md")});
 $("#reloadSnapshot").addEventListener("click",()=>window.location.reload());
 $("#refreshInfo").addEventListener("click",()=>showDoc("references/dashboard-guide.md"));
-const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible)document.querySelectorAll(".nav-link").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+visible.target.id))},{rootMargin:"-10% 0px -55% 0px",threshold:0});
-document.querySelectorAll("main>.section").forEach(s=>observer.observe(s));
+// Views stay in one offline file; hash navigation supports deep links and Back.
+const sections=[...document.querySelectorAll("main>.section")];
+function showView(focus=false){
+ if(location.hash==="#main")return;
+ const requested=location.hash.slice(1),id=sections.some(s=>s.id===requested)?requested:"overview";
+ sections.forEach(s=>{s.hidden=s.id!==id;s.classList.toggle("is-active",s.id===id)});
+ document.querySelectorAll(".nav-link").forEach(a=>{const active=a.getAttribute("href")==="#"+id;a.classList.toggle("active",active);if(active)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+ if(focus){const heading=document.querySelector("#"+id+" h1, #"+id+" h2");heading.setAttribute("tabindex","-1");heading.focus({preventScroll:true});window.scrollTo(0,0)}
+}
+window.addEventListener("hashchange",()=>showView(true));showView();
+const knowledgeDocs=[["references/personal-brand-kb.md","Your brand knowledge","Your goals, story, contribution and preferences."],["references/voice-style-guide.md","Your voice guide","Accepted examples and guidance for work that sounds like you."],["references/visual-style-guide.md","Your visual style","Saved typography, colors and visual choices."]].filter(([path])=>D.docs[path]);
+$("#knowledgeGrid").innerHTML=knowledgeDocs.map(([path,title,description])=>'<article class="component-card" role="button" tabindex="0" data-doc="'+esc(path)+'"><h3>'+esc(title)+'</h3><p>'+esc(description)+'</p><div class="card-bottom"><span>Open saved knowledge</span><span aria-hidden="true">↗</span></div></article>').join("");
 let fuelFilter="all";
 const fuelLabels={ready:"Ready to explore",active:"In progress",usable:"Ready to use",revisit:"Revisit"};
 function fuel(){

@@ -1,5 +1,7 @@
 # Personal Brand System — start here
-Version 0.6.6 | Early pilot release
+Version 0.6.8 | Early pilot release
+
+Version 0.6.8 corrects the completed-foundation display. Once all initial items are resolved or explicitly not applicable, the dashboard shows Foundation complete and reminds you to keep growing through use and feedback. This does not mark lifelong brand development complete.
 
 Build a personal brand you can use with AI and improve over time. No previous branding experience or polished answers required.
 
@@ -34,3 +36,5 @@ Do not replace your personal folder. Follow [safe update instructions](reference
 
 ## Accurate assets
 Use the canonical register and [integrity controls](references/integrity-guide.md) to preserve facts, evidence status and fixed language. These checks do not independently verify a claim.
+
+Version 0.6.8 adds a leader-facing Start here guide, a short chat reminder and separate dashboard section views within one offline HTML file. Fresh initialization also fixes a corrupted dash in the personal skill heading. Existing personal data remains separate from standard upgrades.

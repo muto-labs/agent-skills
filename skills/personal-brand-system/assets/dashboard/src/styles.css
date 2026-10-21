@@ -14,3 +14,7 @@
 .channel-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:-6px 0 22px;font-size:12px}.channel-links a{color:var(--dark);text-decoration:underline;text-underline-offset:3px}.channel-links a:hover{color:var(--cerulean)}
 
 .channel-links a{display:inline-flex;align-items:center;gap:6px}.channel-icon{width:15px;height:15px;flex:none;fill:currentColor}
+
+.chat-hint{margin:16px 48px 0;color:var(--muted);font-size:12px;line-height:1.6}main>.section:not(.is-active){display:none}main>.section{min-height:65vh}@media(max-width:700px){.chat-hint{margin:14px 22px 0}}
+
+@media(max-width:800px){.sidebar{flex-wrap:wrap;gap:10px}.sidebar nav{flex-basis:100%;flex-wrap:wrap;gap:4px}.nav-link{font-size:12px;min-height:40px;display:flex;align-items:center}}

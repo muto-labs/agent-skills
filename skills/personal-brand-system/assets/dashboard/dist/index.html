@@ -12,16 +12,18 @@
 <div class="workspace-label">YOUR WORKSPACE</div>
 <nav aria-label="Main navigation">
 <a href="#overview" class="nav-link active"><span>◈</span> Overview</a>
+<a href="#knowledge" class="nav-link"><span aria-hidden="true">▤</span> Knowledge</a>
 <a href="#components" class="nav-link"><span>▦</span> Skill components <span class="nav-count">10</span></a>
 <a href="#fuel" class="nav-link"><span>✦</span> Fuel</a>
-<a href="#assets" class="nav-link"><span>▤</span> Asset library</a>
-<a href="#next" class="nav-link"><span>↗</span> Next steps</a>
+<a href="#assets" class="nav-link"><span>▤</span> Assets</a>
+<a href="#next" class="nav-link"><span>↗</span> Progress</a>
 </nav>
 <div class="sidebar-bottom"><span class="local-dot"></span> Local & private<p>Your knowledge. Your voice.<br>Your next chapter.</p><div class="mini-palette" aria-label="Muto brand palette"><i></i><i></i><i></i><i></i><i></i><i></i></div><small id="sidebarVersion"></small></div>
 </aside>
-<main id="main">
-<header class="topbar"><div class="breadcrumbs">Personal Brand <span>/</span> <strong id="crumbName">Your name</strong></div><div class="top-meta"><span id="snapshotDate"></span><button class="text-button" data-doc="references/kickoff-guide.md">Start here</button><button class="text-button" id="refreshInfo">About this snapshot</button></div></header>
-<section id="overview" class="section overview">
+<main id="main" tabindex="-1">
+<header class="topbar"><div class="breadcrumbs">Personal Brand <span>/</span> <strong id="crumbName">Your name</strong></div><div class="top-meta"><span id="snapshotDate"></span><button class="text-button" data-doc="references/leader-welcome.md">Start here</button><button class="text-button" id="refreshInfo">About this snapshot</button></div></header>
+<p class="chat-hint">This dashboard shows your saved progress. Answer questions and request changes in your AI chat.</p>
+<section id="overview" class="section overview is-active">
 <div class="eyebrow"><span class="accent-line"></span> YOUR PERSONAL BRAND</div>
 <div class="hero-grid"><div>
 <h1>Your brand.<br><span>Built to grow.</span></h1>
@@ -32,6 +34,10 @@
 </div><div class="progress-panel"><div class="panel-top"><span>ONBOARDING COVERAGE</span><span class="badge review">In progress</span></div><div class="progress-line"><strong id="progressNumber">0<span>%</span></strong><span>completed<br>& reviewed</span></div><div class="progress-track"><div id="progressBar"></div></div><div class="counts"><div><b id="resolvedCount">0</b><span>Complete</span></div><div><b id="remainingCount">30</b><span>Open</span></div><div><b id="deferredCount">0</b><span>Deferred</span></div></div><div class="readiness"><span>✓</span><div><strong id="readinessTitle">Ready to begin</strong><p id="readinessDescription">Your knowledge and assets will grow as you work.</p></div></div><div class="time-row"><span>Active participation</span><strong id="activeTime">Not measured</strong></div><small>Reported time excludes breaks and waiting. Coverage is not a measure of effort or personal potential.</small></div></div>
 <div class="purpose-band"><span class="eyebrow">YOUR PURPOSE</span><p id="purposeText">Your purpose will take shape as we explore what matters to you.</p></div>
 <div class="foundation-strip"><div><span class="tiny-icon">◎</span><strong>Purpose & identity</strong><span id="identityBadge" class="badge review">To explore</span></div><div><span class="tiny-icon">◇</span><strong>Positioning</strong><span id="positioningBadge" class="badge review">To explore</span></div><div><span class="tiny-icon">▤</span><strong>Profile & bios</strong><span id="assetsBadge" class="badge review">Not yet</span></div></div>
+</section>
+<section id="knowledge" class="section">
+<div class="section-heading"><div><div class="eyebrow">YOUR SHARED CONTEXT</div><h2>Your knowledge, ready to use.</h2><p>Explore what is saved about your brand. Ask your AI to add or change it.</p></div></div>
+<div id="knowledgeGrid" class="component-grid"></div>
 </section>
 <section id="components" class="section">
 <div class="section-heading"><div><div class="eyebrow">THE LIVING SYSTEM</div><h2>Everything that makes it yours.</h2><p>All 10 skill components. Open any component to explore the details.</p></div><button class="text-button" data-doc="references/personal-brand-kb.md">Explore the knowledge base ↗</button></div>
@@ -51,7 +57,7 @@
 </section>
 <section id="next" class="section">
 <div class="section-heading"><div><div class="eyebrow">MAKE THE NEXT STEP COUNT</div><h2>Progress, at your pace.</h2><p>Much of the remaining work is review and application. You don't need to start over.</p></div></div>
-<div class="next-layout"><div><div class="list-heading">OPEN CHECKLIST <span id="openCount"></span></div><div id="openItems"></div></div><aside class="later-panel"><div class="eyebrow">LATER, BY CHOICE</div><h3>Deferred ≠ forgotten.</h3><p>These stay visible without blocking useful work now.</p><ul id="deferredWork"></ul><button class="text-button" data-doc="references/progress.md">Open full dashboard ↗</button></aside></div>
+<div class="next-layout"><div><div class="list-heading">OPEN CHECKLIST <span id="openCount"></span></div><div id="openItems"></div></div><aside class="later-panel"><div class="eyebrow">LATER, BY CHOICE</div><h3>Deferred ≠ forgotten.</h3><p>These stay visible without blocking useful work now.</p><ul id="deferredWork"></ul><button class="text-button" data-doc="references/progress.md">Read progress notes ↗</button></aside></div>
 </section>
 <footer><span id="footerBrand">Your Personal Brand.</span><span>Local snapshot · No public publishing approval implied</span></footer>
 </main>

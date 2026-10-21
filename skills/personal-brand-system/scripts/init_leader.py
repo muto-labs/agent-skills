@@ -24,7 +24,7 @@ def initialize(source, destination, name, initials, skill_name, date):
     kb.write_text(kb.read_text(encoding="utf-8-sig").replace("Leader: not initialized","Leader: "+name),encoding="utf-8")
     skill=destination/"SKILL.md"
     text=skill.read_text(encoding="utf-8-sig").replace("name: personal-brand-system","name: "+skill_name)
-    text=text.replace("# Personal Brand System","# "+name+" â€” Personal Brand")
+    text=text.replace("# Personal Brand System","# "+name+" — Personal Brand")
     text=text.replace("Identify the leader and requested mode.","Leader: "+name+". Output prefix: "+initials+". This package is initialized; resume existing progress.")
     skill.write_text(text,encoding="utf-8")
     (destination/"references/asset-index.md").write_text("# "+initials+" asset index\nNo leader assets yet. Dashboard created; index each output with ID, version, source and review status.\n",encoding="utf-8")
