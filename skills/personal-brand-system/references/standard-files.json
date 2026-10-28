@@ -1,5 +1,5 @@
 {
-  "version": "0.6.8",
+  "version": "0.6.9",
   "files": {
     "references/activities.md": {
       "sha256": "00c324d427b9cb5802ccfb6bd94b06a7c343bbd84132b6c2aeac71c5f6e46186",
@@ -14,13 +14,14 @@
       ]
     },
     "references/dashboard-guide.md": {
-      "sha256": "f45bff6c53c990a2f076f5b3deb4ef6fd0db81d615926490288d4f6c5c958016",
+      "sha256": "024f0033893d032203b4e8dbc7f71612137988fa31317d7e787425b896e888d1",
       "previous_hashes": [
         "65ae0f67d7df754fb7757d20136b470ec07ecd97f00d9f40f4d5322d4bb458ab",
         "f87a1402866c54d2dce0a97afb4b7246a2a944e2a0126dbf90f8655e4b99865f",
         "98cd05adb651849e1a5d6e4e63046e8d6bfcf3968ea74ebe14ffa65cede19388",
         "1c0980ac96eacfb96871a2efd23ea92ab20811bc0d7c1c1c499286a4d42834a5",
-        "6bd50e53a78e4729c6ba32a88a043d337dfa082fd9f04e62dab0f2cb2a8ff6d1"
+        "6bd50e53a78e4729c6ba32a88a043d337dfa082fd9f04e62dab0f2cb2a8ff6d1",
+        "f45bff6c53c990a2f076f5b3deb4ef6fd0db81d615926490288d4f6c5c958016"
       ]
     },
     "references/integrity-guide.md": {
@@ -293,14 +294,15 @@
       ]
     },
     "assets/dashboard/src/app.js": {
-      "sha256": "07f84054b60abe366f09587d352e592aff53254c61d99f54ec0acaf5a9cb90a5",
+      "sha256": "7dcadba0061f19cb241236c1e5c573ba15cc5e8a59bf72b25c1d396b50accf3f",
       "previous_hashes": [
         "d9383eb31adb7d80b7fd58e32fc6c30a99395a8965729108bc6f4366fa36590e",
         "da08096cd0dd51123be354300ed058f42e2bbb4d33fe051afc2fc9a5bae4eac5",
         "bf64fbb689387e8de315685645948e14a1fb6a1e1fe4d638c3fab18cc36c66fa",
         "08f175b8f98663df9639393adbcd6ba48bc2add4886d96e71f9d53e19e6b45e9",
         "ecbc1d6083b43a3cd06679e1a77a0a61e56b10780e2e4ea7ff465d4467fc6b7c",
-        "71c11dc35103eec7a7ba673623113bda9c83cb3662fe023eb3acb50926017bfa"
+        "71c11dc35103eec7a7ba673623113bda9c83cb3662fe023eb3acb50926017bfa",
+        "07f84054b60abe366f09587d352e592aff53254c61d99f54ec0acaf5a9cb90a5"
       ]
     },
     "assets/dashboard/src/index.html": {
@@ -312,13 +314,14 @@
       ]
     },
     "assets/dashboard/src/styles.css": {
-      "sha256": "6298bde95db37052131a7a185dd00a7bfe121896d50d8e7ebf3f2597f6fa8e1a",
+      "sha256": "58e889a28d4284978e3f53ffa66a2644192214e90bd9cf9f1f36b211ed6db9d6",
       "previous_hashes": [
         "a6220dd0db385af3aebb0fabbca4e861f8b920a6c43155c5cca0d17ef6363db8",
         "c0de8e6317257c65a4a72033937b2a8af69900c7393699d6c6bf1240ca86fde5",
         "42162a25f1eec9c16531bdbe002cb313554541fbae077ab7c9a3e0cd7e64a02d",
         "521bcc1ad10ed07e0dceb9ee1171a38c873e7586cfc4186a829bbc1c3ebecaa0",
-        "8bf19b1908376ee1a32ee98f31a463df085dbabd29508a20cc72539a702fc860"
+        "8bf19b1908376ee1a32ee98f31a463df085dbabd29508a20cc72539a702fc860",
+        "6298bde95db37052131a7a185dd00a7bfe121896d50d8e7ebf3f2597f6fa8e1a"
       ]
     },
     "references/visual-start.md": {

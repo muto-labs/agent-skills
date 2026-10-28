@@ -163,7 +163,7 @@ let fuelFilter="all";
 const fuelLabels={ready:"Ready to explore",active:"In progress",usable:"Ready to use",revisit:"Revisit"};
 function fuel(){
  const visible=(D.fuel||[]).filter(f=>fuelFilter==="all"||fuelFilter===f.status||fuelFilter==="focus"&&["active","revisit"].includes(f.status));
- $("#fuelGrid").innerHTML=visible.map(f=>'<article class="component-card fuel-card fuel-'+esc(f.status)+'" role="button" tabindex="0" data-doc="'+esc(f.doc)+'" aria-label="Explore '+esc(f.title)+' — '+esc(fuelLabels[f.status])+'"><div class="card-top"><span class="eyebrow">FUEL</span><span class="badge fuel-status '+esc(f.status)+'">'+esc(fuelLabels[f.status])+'</span></div><h3>'+esc(f.title)+'</h3><p>'+esc(f.description)+'</p><div class="card-bottom"><small>'+esc(f.effort)+'</small><span class="card-link" aria-hidden="true">↗</span></div></article>').join("");
+ $("#fuelGrid").innerHTML=visible.map(f=>'<article class="component-card fuel-card fuel-'+esc(f.status)+'" role="button" tabindex="0" data-doc="'+esc(f.doc)+'" aria-label="Explore '+esc(f.title)+' — '+esc(fuelLabels[f.status])+'"><div class="card-top"><span class="eyebrow">FUEL</span><span class="badge fuel-status '+esc(f.status)+'">'+(f.status==="usable"?'<span aria-hidden="true">✓ </span>':"")+esc(fuelLabels[f.status])+'</span></div><h3>'+esc(f.title)+'</h3><p>'+esc(f.description)+'</p><div class="card-bottom"><small>'+esc(f.effort)+'</small><span class="card-link" aria-hidden="true">↗</span></div></article>').join("");
  $("#fuelEmpty").hidden=visible.length>0;
 }
 filters("#fuelFilters",v=>fuelFilter=v,fuel);fuel();

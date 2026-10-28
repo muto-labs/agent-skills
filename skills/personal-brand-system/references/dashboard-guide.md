@@ -45,3 +45,5 @@ Channel shortcuts use Font Awesome Free 6.7.2: LinkedIn and YouTube brand icons,
 
 ## One file, separate views
 Overview, Knowledge, Fuel, Assets, Progress and Skill components are separate hash-addressable views inside the saved HTML. Browser Back/Forward and existing section hashes work; only one section is shown at a time. Start here opens references/leader-welcome.md, a leader-facing guide; references/kickoff-guide.md remains AI orchestration material. Keep the brief chat reminder visible without expanding it into a banner. Test fresh initialization, existing-package upgrade, route/deep links, cards, file links, image previews and keyboard behavior before delivery.
+
+Fuel outputs marked Ready to use have a dark green badge with white text/check mark, a stronger green border and a pale green card background. Keep the text label and symbol so status is not conveyed by color alone. Other Fuel states retain distinct treatments. Status changes still require actual reviewed work; styling never changes progress or approval.
