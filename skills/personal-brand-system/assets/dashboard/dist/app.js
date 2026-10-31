@@ -28,6 +28,9 @@ $(".brand-mark").textContent=P.initials.toLowerCase()+".";
 $(".avatar").textContent=P.initials;
 $("#leaderRole").textContent=P.role;
 $("#purposeText").textContent=P.purpose;
+const approvedTenets=P.tenets||[];
+$("#overviewTenetsList").innerHTML=approvedTenets.map(t=>"<li>"+esc(t)+"</li>").join("");
+$("#overviewTenets").hidden=!approvedTenets.length;
 const foundationComplete=D.state.items.length>0&&D.state.items.every(item=>["resolved","not applicable"].includes(item.state));
 if(foundationComplete){const b=document.querySelector(".progress-panel .panel-top .badge");b.textContent="Foundation complete";b.classList.remove("review");b.classList.add("accepted")}
 $("#readinessTitle").textContent=P.ready?"Ready to put to work":"Ready to begin";

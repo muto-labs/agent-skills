@@ -16,3 +16,6 @@ For generated pages and copy/export, use one canonical rendered text value rathe
 Before calling an asset ready, check claim/source fidelity, fixed wording, actual voice and usable delivery. State what was checked and any unresolved factual issue, then ask one concise review question. Do not shift to the next asset while an important correction is unresolved unless the leader explicitly chooses drafts in parallel. Public approval is version/context-specific and does not follow from a mechanical check.
 
 When a source changes, identify dependent assets for review; do not silently rewrite accepted outputs or publish them. Keep private records private and export only permitted excerpts.
+
+## Purpose and personal tenets
+Canonical purpose feeds the overview and standalone purpose asset. Canonical personal-tenets contains one tenet per line; the overview shows it only when approval_status is accepted-for-reuse or public-approved. Missing/unreviewed means hidden. Keep both assets separate and approvals independent. A legacy profile/KB purpose may serve as fallback until a canonical statement is chosen; do not label it newly approved. Preserve legacy combined assets as history when splitting and do not carry unreviewed tenets into an accepted record. Changes to accepted wording follow versioned review.

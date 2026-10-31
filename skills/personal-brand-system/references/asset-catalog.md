@@ -27,4 +27,8 @@ Each template has required inputs, structure, example, checks and adaptation. Us
 | development-review | Development and review plan | [Open](../assets/templates/development-review.md) |
 | story-card | Origin or lesson story card | [Open](../assets/templates/story-card.md) |
 | agent-briefing | Task-specific agent briefing | [Open](../assets/templates/agent-briefing.md) |
+| purpose | My purpose — standalone | [Open](../assets/templates/purpose.md) |
+| personal-tenets | Personal tenets — separate guiding principles | [Open](../assets/templates/personal-tenets.md) |
 
+
+Purpose and personal tenets are separate assets with independent review states. Follow their recipes and the canonical language register; no extra onboarding items are added.

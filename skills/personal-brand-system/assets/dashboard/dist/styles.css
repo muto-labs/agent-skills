@@ -21,3 +21,5 @@
 
 /* Reviewed Fuel outputs should stand apart from unexplored experiences. */
 .fuel-card.fuel-usable{background:#F1F9F4;border:2px solid #23744A;border-top-width:5px}.fuel-card.fuel-usable:hover{border-color:#174F32}.fuel-status.usable{background:#215D3B;color:#FFFFFF;font-weight:700;font-size:11px;padding:5px 9px}.fuel-card.fuel-usable .card-bottom{border-top-color:#C6E0CF}
+
+.overview-tenets{margin-top:24px;padding:22px 26px;background:white;border:1px solid var(--border);border-radius:8px}.overview-tenets h2{font-size:20px;margin:0 0 12px}.overview-tenets ul{padding-left:20px;margin:0}.overview-tenets li{margin:10px 0;line-height:1.7}

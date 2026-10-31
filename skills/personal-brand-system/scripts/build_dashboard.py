@@ -75,6 +75,12 @@ def build(package):
     purpose = next((l.strip("*") for l in profile_lines if l.startswith("**Help ")), None)
     kb_purpose = re.search(r"(?m)^\*\*(Help .+)\*\*$", docs["references/personal-brand-kb.md"]["text"])
     purpose = purpose or (kb_purpose.group(1) if kb_purpose else "Your purpose will take shape as we explore what matters to you.")
+    register_path = package/"references/integrity-register.json"
+    language = json.loads(register_path.read_text(encoding="utf-8")).get("language",[]) if register_path.exists() else []
+    accepted = {record["id"]:record for record in language if record.get("approval_status") in {"accepted-for-reuse","public-approved"}}
+    if "purpose" in accepted:
+        purpose = accepted["purpose"]["exact_text"]
+    tenets = [line.removeprefix("- ").strip() for line in accepted.get("personal-tenets",{}).get("exact_text","").splitlines() if line.strip()]
     def complete(milestones):
         return all(i["state"] in {"resolved","not applicable"} for i in state["items"] if i["id"].split(".")[0] in milestones)
     for c in config["components"]:
@@ -86,7 +92,7 @@ def build(package):
             if c["id"]=="assets" and profile: c["statusLabel"] = "In use"
     initials = state.get("output_prefix") or "PB"
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,32}", initials): raise ValueError("Unsafe output prefix")
-    presentation = {"initials":initials,"profile":profile,"role":role,"purpose":purpose,"ready":bool(profile and complete(["M2","M3"]))}
+    presentation = {"initials":initials,"profile":profile,"role":role,"purpose":purpose,"tenets":tenets,"ready":bool(profile and complete(["M2","M3"]))}
     data = {"leader":state["leader"],"date":state["updated"],"version":state["standard_version"],"state":state,"summary":summarize(state),"components":config["components"],"fuel":config.get("fuel",[]),"assets":assets,"channels":config.get("channel_links",[]),"docs":docs,"files":files,"presentation":presentation}
     destination = package/"assets/dashboard/dist"
     destination.mkdir(parents=True,exist_ok=True)
