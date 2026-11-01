@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "standard_version": "0.3.0",
+  "person": {
+    "name": "",
+    "initials": ""
+  },
+  "updated_at": "",
+  "brand": {
+    "status": "unspecified",
+    "source": "",
+    "colors": {},
+    "font_family": "",
+    "logo_path": "",
+    "logo_alt": "",
+    "font_path": ""
+  },
+  "foundation": {
+    "purpose": null,
+    "tenets": null,
+    "grit": null
+  },
+  "years": [],
+  "checkpoint": {
+    "next_action": "Start with your Current Year Wrap & Recap.",
+    "open_questions": [],
+    "deferred": []
+  }
+}

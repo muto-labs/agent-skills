@@ -1,0 +1,28 @@
+{
+  "standard_version": "0.3.0",
+  "files": {
+    "README.md": "36c8e40ad28cbbc8f1dcd2fbdf2186c1eff131d2f2d2fbb87e64247fc15796ee",
+    "SKILL.md": "386dd5b054b95b4df1107a4670b40d5ec0013010802cfd24aeca9ae563ce43ce",
+    "assets/kb-template.md": "cf770e3c4fb03e3248b729351525a39543ce99d154810c966412cc1e4ba831cd",
+    "assets/plan-template.json": "e07b5dcb1f1d53b83a39627971b664f666d181ea2dcb8748b51b5f384e00b92e",
+    "references/dashboard.md": "44aaac61beeb3006a0b8fd746781f0bf3e46bd7eabc55bad38b6687d99e83cbd",
+    "references/maintenance.md": "5ab1611a19eb51c49450fbf10970cabf0142166b6397066f9690d93b4dbe9128",
+    "references/pbs-integration.md": "5b85d0ae82c4646e815acacb2dd47697b98b525e5ef3078b2a3907c2842df803",
+    "references/process.md": "0be28c3f150c53d096a08374e9e1cb485a8ba0262c4ef93aa5f05a207a1ce0d6",
+    "references/target-objectives.md": "0284f719810347f91d3f242e1c19d45c0ea984a47cf55260d29c088e86bb705c",
+    "references/tracking-and-readiness.md": "a37c513eecaf674b4dd2bc5f200adaf3ed9612661cf78bf83ce69318b3624aaf",
+    "scripts/build_dashboard.py": "7d56c7943c5ace26f7eb246082e9ca0ad9fd661c0d2d0120925e49d789c27623",
+    "scripts/init_plan.py": "d31c9ffa402eb3c149e53e72ee68b0a2bdb4686ba1e64f9d1854c46e0ab07393",
+    "scripts/plan_upgrade.py": "e90b41dbc64a036e6436f85008d1b4e5a6a810e25384e833724badded17c050e",
+    "scripts/quarter_pacing.py": "130a340bd6030529b4d916e57dd91440dd4e894b54470f785074cb942b0253cd",
+    "scripts/test_browser.cjs": "b703cb98d081bd01aea8c1b519c414b653255f233bed412b7342eb04bb586639",
+    "scripts/test_dashboard.py": "8c75fa9b98545709b454280522bd7b2bc35caf761af94c17f11307a78ad7da7b",
+    "assets/dashboard/app.js": "7f4a593365acfc8602083cfc737ffe37d4d7fddc9ce7669ef9b23825fc73460a",
+    "assets/dashboard/style.css": "e766b887c08e8a23ee215b3b3de35d54af3715d57a6f36ad2f65d0d2657f344e",
+    "assets/dashboard/template.html": "460620bf8ab81af6860fe875bcafd9815bf7a13e7cbd60ed16b0c7f8f3ea6861",
+    "assets/templates/experiment.md": "47d618aed10e398b8926bbff05de8a49f1db28d4f4512d9b0a7d4af0a43af28a",
+    "assets/templates/moment.md": "c9b1cdc1546ed89e79aaa33d1208b49c94b76b70845d0baa49223fe26ed63639",
+    "assets/templates/obsidian-experiment.md": "0738e0949282a3ee5640127f6ad3290ba0dae70fac083acbaa737b0837c1f6a6",
+    "assets/templates/obsidian-moment.md": "4512ecb98347ebdde8d159fa30004153e935f136b08c68367290866d77f03404"
+  }
+}

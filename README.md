@@ -20,6 +20,24 @@ Start with this message:
 
 [Browse the skill](skills/personal-brand-system/README.md) · [Read its instructions](skills/personal-brand-system/SKILL.md)
 
+## Your personal strategic plan
+Turn reflection into an annual focus, six core Target Objectives, and a focused quarter across God, Fit, Fam, Biz, $, and Up. The guided process works one pillar at a time and can reuse accepted Purpose, Tenets, and personal style from your Personal Brand System.
+
+**Current version: 0.3.0 · Initial public release**
+
+1. [Download the Strategic Plan skill ZIP](downloads/personal-strategic-plan-v0.3.0.zip?raw=true) and extract it.
+2. Open `personal-strategic-plan/README.md` for getting-started instructions.
+3. Open `personal-strategic-plan/assets/dashboard/strategic-plan-standard.html` in your browser to explore the blank offline view.
+4. Give your AI the skill folder using its supported method and ask it to create a separate private personal copy for your chosen year.
+
+Start with:
+
+> Help me create my personal strategic plan using this skill. Begin with my Current Year Wrap & Recap, one pillar at a time. Draft from my answers, ask one focused question at a time, and use a separate private copy. Reuse my accepted Personal Brand System foundation and style if available. Offer the dashboard with opening instructions, and distinguish saved work from proposed updates.
+
+Includes calendar-aware quarterly pacing, personal focus-word definitions, independent tracking/weight decisions, quarter locking and activation, optional source images and reflection templates, native Obsidian templates, and a read-only customization-aware upgrade preview. Targets and templates are personalized in the private copy.
+
+[Browse Strategic Plan](skills/personal-strategic-plan/README.md) · [Read its instructions](skills/personal-strategic-plan/SKILL.md) · [Safe updates](skills/personal-strategic-plan/references/maintenance.md)
+
 ## Your files and your control
 This repository contains only the reusable standard and a clean example. Keep your personal knowledge, answers and generated assets in a separate private folder outside this repository. You choose what to share with your AI platform and review anything before it becomes public.
 

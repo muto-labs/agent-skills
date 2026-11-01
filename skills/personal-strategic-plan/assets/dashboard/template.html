@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Personal Strategic Plan</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="sidebar">
+ <div class="identity"><div id="monogram" class="monogram">SP</div><div><strong id="person-label">Your strategic plan</strong><span>PERSONAL STRATEGY</span></div></div>
+ <div class="nav-label">YOUR WORKSPACE</div>
+ <nav aria-label="Main navigation" id="navigation"></nav>
+ <div class="sidebar-foot"><span class="tiny-dot"></span> Private · Offline · Read-only<br><span>Make your next year intentional.</span></div>
+</aside>
+<div class="workspace">
+ <header class="topbar"><span class="eyebrow">A DIRECTION. A PLAN. A WAY FORWARD.</span><div class="toolbar"><label>Year <select id="year-select" aria-label="Planning year"></select></label><button id="update-button" class="button small">Update my view</button></div></header>
+ <main id="main" tabindex="-1"></main>
+ <footer>Built from your saved planning knowledge. Make changes in your AI conversation, then rebuild and reload. <span id="updated"></span></footer>
+</div>
+<dialog id="details" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">STRATEGIC PLAN</span><button id="close-dialog" aria-label="Close details" class="close">×</button></div><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+<script type="application/json" id="plan-data">__PLAN_DATA__</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
