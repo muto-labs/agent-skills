@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voice Note Intake Portable · Muto"
+  short_description: "Set up local voice recordings as Obsidian notes"
+  default_prompt: "Use $voice-note-intake-portable to review my system and guide me through setup and a safe test."

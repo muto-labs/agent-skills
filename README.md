@@ -38,6 +38,19 @@ Includes calendar-aware quarterly pacing, personal focus-word definitions, indep
 
 [Browse Strategic Plan](skills/personal-strategic-plan/README.md) · [Read its instructions](skills/personal-strategic-plan/SKILL.md) · [Safe updates](skills/personal-strategic-plan/references/maintenance.md)
 
+## Your voice notes
+
+Turn recorded WAVs into structured Obsidian notes with local Voicebox transcription, a retained audio archive and optional action tracking. Use it as a starting point for your own recorder, vault and workflow.
+
+**Current version: 0.1.0 · Early pilot · Apache-2.0**
+
+1. [Download Voice Note Intake Portable](downloads/voice-note-intake-portable-v0.1.0.zip?raw=true) and extract it.
+2. Read the [getting-started guide](skills/voice-note-intake-portable/README.md) and [architecture overview](skills/voice-note-intake-portable/references/architecture.md). The initial setup targets Windows with Python 3.11+, PowerShell 7, Obsidian and local Voicebox.
+3. Give your AI assistant the extracted skill folder and start with:
+
+> Use Voice Note Intake Portable to inspect my setup, ask for missing settings and test with a sample recording in an isolated vault. Keep recorder deletion and scheduling disabled.
+
+
 ## Your files and your control
 This repository contains only the reusable standard and a clean example. Keep your personal knowledge, answers and generated assets in a separate private folder outside this repository. You choose what to share with your AI platform and review anything before it becomes public.
 

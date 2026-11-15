@@ -1,0 +1,12 @@
+Voice Note Intake Portable
+Developed by Muto.
+Version 0.1.0
+
+This distribution contains Muto-authored workflow instructions, scripts,
+templates and tests offered under the Apache License, Version 2.0.
+See LICENSE for the governing terms. Preserve applicable notices when
+redistributing this work. This notice adds no restrictions to the license.
+
+Voicebox, Whisper, Obsidian, Python, PowerShell and any AI assistant are
+separate dependencies, not bundled here. Their respective terms apply.
+Recordings, transcripts and user configuration are not included.
