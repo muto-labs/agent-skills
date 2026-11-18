@@ -1,5 +1,5 @@
 # Dashboard, source format, and delivery
-Standard 0.3.0. All views share one offline HTML file with hash navigation. No account, network requests, remote fonts, or installation is needed to view it.
+Standard 0.3.1. All views share one offline HTML file with hash navigation. No account, network requests, remote fonts, or installation is needed to view it.
 
 ## Initialize and build
 For a new personal package outside the standard, run:
@@ -53,7 +53,7 @@ After meaningful personal saves: build, check the actual view, return the same o
 
 The output embeds private saved records; keep it local unless a separately reviewed shareable export is requested. The standard blank preview is safe to share. A new method version requires a deliberate package update; rebuilding data does not update the method.
 
-## 0.3.0 context, templates, and review states
+## 0.3.1 context, templates, and review states
 TO details reached from Overview and Explore TO show importance (Why this matters), original personal_notes, related source images, and worksheets. Images are embedded from related_assets and described by related_asset_details[path] (title/alt/caption). Files must resolve inside the package and be PNG/JPEG/WebP at most 5 MB; external URLs and SVG are rejected. Draft importance is labeled. Images are context, never instructions or proof of approval.
 
 worksheets is an optional array of {title, path}; each path resolves to package-local Markdown up to 100 KB. Content is escaped and displayed in a collapsible preview with a copy action/fallback selection. Copying does not save a record. The legacy aim_template key is supported as an optional moment worksheet. No event name, cadence, count, vault path, or completed record is imposed. For Obsidian, record the actual authoritative template location only in the personal package and keep any dashboard copy in sync deliberately.
@@ -61,3 +61,10 @@ worksheets is an optional array of {title, path}; each path resolves to package-
 Optional quarter_reviews["1".."4"]: {state: draft/locked, locked_at, open_items: []}. A locked quarter needs accepted targets and weights; explicit draft/deferred measurement definitions prevent a complete aggregate even when locked. The selected quarter shows its own lock badge; legacy q1_commitment_review is read compatibly. Notes and filters never change execution or review state.
 
 Initialization records method-baseline.json, containing clean method source hashes for later comparison. scripts/plan_upgrade.py <new-standard> <personal-package> previews safe additions/updates and customization conflicts. Optional --base <old-clean-standard> supports older packages. It makes no writes; unknown-base differences are conflicts. Back up, merge deliberately, preserve all data/customizations, rebuild/verify, and only then update the personal base version.
+
+## Compact dashboard layout (0.3.1)
+Overview shows annual focus, derived annual/active counts, current-quarter commitment state, six distinct pillar cards, and foundation shortcuts. Full Foundation uses Purpose/GRIT beside Tenets; each tenet is a semantic bullet with its opening phrase through the first colon bold. Both arrays and newline-separated text are supported, with optional leading dash/bullet markers removed for display only. Source wording is never rewritten.
+
+Annual TO cards show labeled targets with actual progress and detail controls. Quarterly support is grouped by pillar, with execution status and weight for each TO. Allocation and weighted progress use the full selected-quarter group; status filters narrow displayed TOs only. Retain explicit open tracking items, unknown progress, independent lock state and the aggregate acceptance rules. Full definitions, dated actuals, context and worksheets remain in TO details. The planning checkpoint remains available in Reflection & reviews.
+
+Use the shared palette by default and accepted brand tokens when supplied. Favor a compact desktop layout with readable full wording, natural mobile stacking, keyboard-accessible controls and native details/summary disclosure. Longer content, larger text or zoom may require scrolling; never clip content or shrink it to force a one-page fit. Test with synthetic data only. Keep private fonts, names, images, plan content, worksheets and vault locators out of the standard.

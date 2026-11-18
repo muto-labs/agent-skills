@@ -11,7 +11,7 @@ function build(data,name){const src=path.join(tmp,name+'.json');const out=path.j
 const blank=JSON.parse(fs.readFileSync(path.join(root,'assets/plan-template.json'),'utf8'));
 const d=structuredClone(blank);d.person={name:'Example Planner',initials:'EP'};d.updated_at='2030-01-01';
 d.brand={status:'accepted',source:'Synthetic style v1',colors:{accent:'#f3c745',sidebar:'#183b47',background:'#f6f5ee'},font_family:'Georgia',logo_path:''};
-d.foundation={purpose:{text:'Present-day purpose',review_state:'accepted'},tenets:{text:['Practice deliberately','Keep promises'],review_state:'accepted'},grit:{text:'Build lasting possibilities.',review_state:'draft'}};
+d.foundation={purpose:{text:'Present-day purpose',review_state:'accepted'},tenets:{text:['Practice deliberately: build useful skills.','Keep promises: follow through.'],review_state:'accepted'},grit:{text:'Build lasting possibilities.',review_state:'draft'}};
 const annual={id:'fit-2030',pillar:'Fit',quarter:null,description:'Walk 100 miles',status:'Doing',review_state:'accepted',metric:'#',unit:'miles',measurement:'Logged calendar-year miles',comparison_key:'walking',start:0,target:100,current:25,due_date:'2030-12-31',as_of:'2030-01-01'};
 const rows=[annual,
  {...annual,id:'fit-q1a',quarter:1,parent_id:annual.id,description:'Walk the first 25 miles',weight:60,target:25,current:25,status:'Done'},
@@ -56,29 +56,51 @@ const hostile=structuredClone(d);hostile.person.name='</script><script>window.in
   assert.match(await page.locator('main').textContent(),/80 \/ 90/);
   await page.getByRole('group',{name:'Filter by planning year'}).getByRole('button',{name:'2030',exact:true}).click();
   assert.equal(await page.getByRole('combobox',{name:'Pillars'}).count(),1);
-  await page.getByRole('link',{name:'Quarterly focus',exact:true}).click();await page.getByRole('heading',{name:'Focus on the next right results.',exact:true}).waitFor();
+  await page.getByRole('link',{name:'Quarterly focus',exact:true}).click();await page.getByRole('heading',{name:'Quarterly Focus',exact:true}).waitFor();
   assert.equal(await page.locator('.intro').getByText('Q1 locked',{exact:true}).count(),1);
   await page.getByRole('group',{name:'Filter by planning year'}).getByRole('button',{name:'2029',exact:true}).click();
   assert.equal(await page.locator('article.objective').count(),0);
   await page.getByRole('group',{name:'Filter by planning year'}).getByRole('button',{name:'2030',exact:true}).click();
-  assert.equal(await page.locator('article.card').filter({has:page.getByRole('heading',{name:'Fit',exact:true})}).locator('.count').textContent(),'60%');
+  assert.equal(await page.locator('[aria-label="Fit quarterly support"] .quarter-pillar-head .meta').textContent(),'100% allocated · 60% progress');
   await page.locator('#status-filter').selectOption('Done');
-  assert.equal(await page.locator('article.objective').count(),1);assert.equal(await page.locator('article.card').filter({has:page.getByRole('heading',{name:'Fit',exact:true})}).locator('.count').textContent(),'60%');
+  assert.equal(await page.locator('article.objective').count(),1);assert.equal(await page.locator('[aria-label="Fit quarterly support"] .quarter-pillar-head .meta').textContent(),'100% allocated · 60% progress');
   await page.getByRole('button',{name:'Explore TO →'}).click();
   await page.getByRole('dialog').waitFor();assert.match(await page.getByRole('dialog').textContent(),/Walk 100 miles/);
   assert.equal(await page.getByRole('dialog').getByRole('heading',{name:'Why this matters',exact:true}).count(),1);
   await page.keyboard.press('Escape');assert.equal(await page.getByRole('dialog').isVisible(),false);
   await page.locator('#status-filter').selectOption('');await page.locator('#quarter-select').selectOption('2');
-  assert.equal(await page.locator('article.card').filter({has:page.getByRole('heading',{name:'Fit',exact:true})}).locator('.count').textContent(),'—');
+  assert.equal(await page.locator('[aria-label="Fit quarterly support"] .quarter-pillar-head .meta').textContent(),'100% allocated · Progress pending');
   await page.getByRole('link',{name:'Year over year',exact:true}).click();await page.getByRole('heading',{name:'See how your direction evolves.',exact:true}).waitFor();assert.match(await page.locator('main').textContent(),/2029: 80 miles/);
   await page.locator('#year-select').selectOption('2029');await page.getByRole('link',{name:'Foundation',exact:true}).click();await page.getByRole('heading',{name:'Know what guides you.',exact:true}).waitFor();
   assert.equal(await page.locator('main').getByText('Present-day purpose',{exact:true}).count(),0);
   await page.locator('#year-select').selectOption('2030');await page.getByRole('link',{name:'Overview',exact:true}).click();await page.locator('.pillar-name').first().waitFor();
   if(process.env.SP_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.SP_SCREENSHOT_DIR,'strategic-plan-synthetic-brand.png'),fullPage:true});
+  await page.getByRole('link',{name:'Foundation',exact:true}).click();await page.locator('.tenets-list').waitFor();
+  assert.equal(await page.locator('.tenets-list li').count(),2);assert.deepEqual(await page.locator('.tenets-list strong').allTextContents(),['Practice deliberately:','Keep promises:']);
+  await page.locator('[data-foundation="tenets"]').click();assert.equal(await page.locator('dialog .tenets-list li').count(),2);await page.keyboard.press('Escape');
+  const textTenets=structuredClone(d);textTenets.foundation.tenets.text='- Seek clarity: ask good questions.\n- Practice daily: keep learning.';
+  await page.goto(build(textTenets,'text-tenets')+'#foundation');assert.equal(await page.locator('.tenets-list li').count(),2);assert.deepEqual(await page.locator('.tenets-list strong').allTextContents(),['Seek clarity:','Practice daily:']);
+  // Exercise all compact views with generic full six-pillar data, including 11 quarterly TOs.
+  const dense=structuredClone(d);for(const pillar of ['God','Fam','Biz','$','Up']){
+   const id='synthetic-'+pillar;dense.years[0].objectives.push({...annual,id,pillar,description:'Complete a meaningful annual result for '+pillar,unit:'results',target:80,current:null});
+   const count=['God','Biz'].includes(pillar)?3:1;
+   for(let i=0;i<count;i++)dense.years[0].objectives.push({...annual,id:id+'-q1-'+i,pillar,quarter:1,parent_id:id,description:'Complete focused supporting result '+(i+1)+' for '+pillar,unit:'results',weight:i===count-1?100-(count-1)*33:33,target:20,current:null});
+  }
+  for(const [width,height] of [[1366,768],[1448,900],[390,844]]){
+   await page.setViewportSize({width,height});await page.goto(build(dense,'dense-'+width));
+   for(const route of ['overview','foundation','objectives','quarter']){
+    await page.evaluate(r=>location.hash=r,route);await page.locator('#main.'+route+'-page').waitFor();
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    if(route==='objectives')assert.equal(await page.locator('.objective').count(),6);
+    if(route==='quarter'){assert.equal(await page.locator('.objective').count(),11);assert.equal(await page.locator('.quarter-pillar').count(),6);}
+    if(process.env.SP_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.SP_SCREENSHOT_DIR,'synthetic-'+route+'-'+width+'.png'),fullPage:true});
+   }
+  }
+  await page.setViewportSize({width:1440,height:1100});
   const deferred=structuredClone(d);deferred.years[0].objectives[1].measurement_review_state='deferred';deferred.years[0].quarter_reviews['1'].open_items=['Synthetic counting clarification'];
   await page.goto(build(deferred,'deferred')+'#quarter');
   assert.equal(await page.getByRole('region',{name:'Tracking details to finish'}).getByText('Synthetic counting clarification',{exact:true}).count(),1);
-  assert.equal(await page.locator('article.card').filter({has:page.getByRole('heading',{name:'Fit',exact:true})}).locator('.count').textContent(),'—');
+  assert.equal(await page.locator('[aria-label="Fit quarterly support"] .quarter-pillar-head .meta').textContent(),'100% allocated · Progress pending');
   assert.equal(await page.locator('.intro').getByText('Q1 locked',{exact:true}).count(),1);
   const decreasing=structuredClone(d);Object.assign(decreasing.years[0].objectives[0],{start:20,target:10,current:20});
   await page.goto(build(decreasing,'decreasing'));assert.equal(await page.getByText('-0% toward target',{exact:true}).count(),0);

@@ -1,5 +1,5 @@
 # Personal Strategic Plan — start here
-Version 0.3.0 | Initial public release
+Version 0.3.1 | Compact dashboard update
 
 Turn reflection into a clear personal direction, six annual Target Objectives, and a focused quarter. Work through one life pillar at a time: God (spiritual relationship), Fit (fitness), Fam (family and friends), Biz (work/business), $ (personal finances), and Up (personal development).
 

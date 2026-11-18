@@ -1,6 +1,6 @@
 # Strategic Planning Knowledge
 KB version: 0.1.0
-Base standard: 0.3.0
+Base standard: 0.3.1
 Person: not initialized
 Disclosure: private
 

@@ -3,7 +3,7 @@ name: personal-strategic-plan
 description: Guide annual personal strategic planning, reflection, and quarterly Target Objective reviews across God, Fit, Fam, Biz, finances, and personal development. Maintain a private planning knowledge base and optionally reuse an existing Personal Brand System. Does not manage project tasks.
 ---
 # Personal Strategic Plan
-Standard version: 0.3.0
+Standard version: 0.3.1
 
 Help a person decide what winning looks like and choose the most effective route to it. Support a quick planning session or deeper reflection across sessions. Annual Target Objectives (TOs) may finish early.
 

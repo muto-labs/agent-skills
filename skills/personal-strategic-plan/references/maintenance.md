@@ -26,7 +26,7 @@ Generate a local HTML view from the personal KB on request or when implementing 
 
 Prefer one offline HTML file with embedded permitted style/assets; no external network calls are necessary. Escape all source text and attributes, and do not execute markup/scripts from imported notes. Separate source text from rendering code. Exclude disclosure-restricted material from shareable exports. Show unknown/draft states honestly and use text labels as well as color.
 
-Save → regenerate → visually verify → share the actual file path → explain reopening/reloading. Read-only means the HTML cannot claim to save changes. Standard 0.3.0 bundles the renderer, initializer, and blank preview. Follow [dashboard instructions](dashboard.md) and keep generated personal views out of the standard.
+Save → regenerate → visually verify → share the actual file path → explain reopening/reloading. Read-only means the HTML cannot claim to save changes. Standard 0.3.1 bundles the renderer, initializer, and blank preview. Follow [dashboard instructions](dashboard.md) and keep generated personal views out of the standard.
 
 ## Improve and release
 For a method improvement, identify the generic behavior, update the standard and version, and preserve a concise release decision with date and changed behavior. Inspect changes for personal names, paths, source imports, real objectives, images, and generated views before sharing.
@@ -44,3 +44,5 @@ Initial release: 0.1.0 — generic guided planning method, TO definitions, optio
 0.3.0 - recap-led one-pillar drafts, scope checks, calendar-aware pacing, separate definition/commitment/activation decisions, privacy-aware tracking, readiness closeout, optional context/images/fonts/worksheets and native Obsidian templates, synthetic verification, and read-only three-way upgrade previews.
 
 New personal packages retain method-baseline.json with original clean method hashes. Preview upgrades with scripts/plan_upgrade.py; the tool never writes or upgrades by itself. An edited renderer, font behavior, knowledge store, source asset, or external vault is preserved. With no known baseline, existing differences require review instead of overwrite. Resolve a personalized SKILL.md deliberately because identity/routing may differ from the standard. Backups stay outside the shareable standard. Release only method files and the blank preview, never a personalized package or real test fixture.
+
+0.3.1 — 2026-11-18: compact Overview, distinct pillar cards, foundation shortcuts, full Foundation with bulleted Tenets and bold opening phrases through the colon, annual TO target cards, quarterly TOs grouped by pillar, compact filters and progressive disclosure. Preserves independent tracking readiness, brand tokens, safe source rendering, and private-package separation. No schema change.

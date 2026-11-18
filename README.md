@@ -23,9 +23,9 @@ Start with this message:
 ## Your personal strategic plan
 Turn reflection into an annual focus, six core Target Objectives, and a focused quarter across God, Fit, Fam, Biz, $, and Up. The guided process works one pillar at a time and can reuse accepted Purpose, Tenets, and personal style from your Personal Brand System.
 
-**Current version: 0.3.0 · Initial public release**
+**Current version: 0.3.1 · Compact dashboard update**
 
-1. [Download the Strategic Plan skill ZIP](downloads/personal-strategic-plan-v0.3.0.zip?raw=true) and extract it.
+1. [Download the Strategic Plan skill ZIP](downloads/personal-strategic-plan-v0.3.1.zip?raw=true) and extract it.
 2. Open `personal-strategic-plan/README.md` for getting-started instructions.
 3. Open `personal-strategic-plan/assets/dashboard/strategic-plan-standard.html` in your browser to explore the blank offline view.
 4. Give your AI the skill folder using its supported method and ask it to create a separate private personal copy for your chosen year.
@@ -34,7 +34,7 @@ Start with:
 
 > Help me create my personal strategic plan using this skill. Begin with my Current Year Wrap & Recap, one pillar at a time. Draft from my answers, ask one focused question at a time, and use a separate private copy. Reuse my accepted Personal Brand System foundation and style if available. Offer the dashboard with opening instructions, and distinguish saved work from proposed updates.
 
-Includes calendar-aware quarterly pacing, personal focus-word definitions, independent tracking/weight decisions, quarter locking and activation, optional source images and reflection templates, native Obsidian templates, and a read-only customization-aware upgrade preview. Targets and templates are personalized in the private copy.
+Includes calendar-aware quarterly pacing, personal focus-word definitions, independent tracking/weight decisions, quarter locking and activation, optional source images and reflection templates, native Obsidian templates, and a read-only customization-aware upgrade preview. Targets and templates are personalized in the private copy. Version 0.3.1 adds a compact Overview, distinct pillar cards, clearer annual targets, grouped quarterly support, and bulleted Tenets with bold opening phrases.
 
 [Browse Strategic Plan](skills/personal-strategic-plan/README.md) · [Read its instructions](skills/personal-strategic-plan/SKILL.md) · [Safe updates](skills/personal-strategic-plan/references/maintenance.md)
 
@@ -68,3 +68,4 @@ Your AI saves the source files and rebuilds the workspace. You then reload the o
 Download the new standard separately. Do not extract it over your personal folder. Follow [the update guide](skills/personal-brand-system/references/update-guide.md): preview, backup, preserve personal files and merge customized conflicts before rebuilding and reloading.
 
 Version 0.6.10 separates purpose and personal tenets into independently reviewed assets. The overview uses canonical approved purpose wording and shows personal tenets only after explicit approval. Draft tenets stay hidden. Existing personal knowledge, review decisions and legacy assets are preserved through the standard safe-update workflow.
+
